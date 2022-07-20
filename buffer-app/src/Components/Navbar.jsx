@@ -1,28 +1,105 @@
-import { Button, Flex, Text } from "@chakra-ui/react";
+import { Button, Flex, Text, LinkBox, Box } from "@chakra-ui/react";
 import React from "react";
 import { BsStack } from "react-icons/bs";
 
-  import {Dr} from "./Drawer"
+import { Dr } from "./Drawer";
 
 export const Navbar = () => {
-    
-  return <div>
-  <Flex justifyContent={"space-between"} margin="20px">
-    <Flex fontSize={"27px"} textAlign={"center"} alignItems={"center"} gap="10px">
-        <BsStack></BsStack>
-        <Text fontWeight={"bold"} fontFamily="Roboto,sans-serif" >Buffer</Text>
+  return (
+    <div>
+      <Flex justifyContent={"space-between"} margin="20px" align={"center"}>
+        <Flex
+          fontSize={"27px"}
+          textAlign={"center"}
+          align={"center"}
+          gap="10px"
+        >
+          <BsStack></BsStack>
+          <Text fontWeight={"bold"} fontFamily="Roboto,sans-serif">
+            Buffer
+          </Text>
+          
+            <Flex direction={"column"} w={"20px"} h={"16px"} alignContent="center" border={"1px solid blue.800"}>
+            <Box bg={"#3A75C4"} h="8px"></Box>
+            <Box bg={"#F9DD16"} h="8px"></Box>
+          </Flex>
+          
+          
+        </Flex>
 
-    </Flex>
-    <Flex>
+        <Flex display={["none", "none", "none", "view"]}>
+          <LinkBox>
+            <Button
+              as="a"
+              variant="ghost"
+              colorScheme={"white"}
+              area-label="Tools"
+              my={5}
+              w="100%"
+            >
+              Tools
+            </Button>
+          </LinkBox>
+          <LinkBox>
+            <Button
+              as="a"
+              variant="ghost"
+              colorScheme={"white"}
+              area-label="Tools"
+              my={5}
+              w="100%"
+            >
+              Pricing
+            </Button>
+          </LinkBox>
+          <LinkBox>
+            <Button
+              as="a"
+              variant="ghost"
+              colorScheme={"white"}
+              area-label="Tools"
+              my={5}
+              w="100%"
+            >
+              Blog
+            </Button>
+          </LinkBox>
+          <LinkBox>
+            <Button
+              as="a"
+              variant="ghost"
+              colorScheme={"white"}
+              area-label="Tools"
+              my={5}
+              w="100%"
+            >
+              About
+            </Button>
+          </LinkBox>
+          <LinkBox>
+            <Button
+              as="a"
+              variant="ghost"
+              colorScheme={"white"}
+              area-label="Tools"
+              my={5}
+              w="100%"
+            >
+              Customer
+            </Button>
+          </LinkBox>
+        </Flex>
 
-    </Flex>
-    <Flex gap={"10px"} display={["none","view"]}>
-        <Button colorScheme='blue' variant='link'>Log In</Button>
-        <Button colorScheme='blue' variant='solid'>Get Started now</Button>
-       
-        <Dr ></Dr>
-    </Flex>
-  </Flex>
-
-  </div>;
+        <Flex>
+          <Button colorScheme="blue" variant="link" marginRight={"10px"}>
+            Log In
+          </Button>
+          <Button colorScheme="blue" variant="solid" bg="#2C4BFF">
+            Get Started now
+          </Button>
+          <Dr></Dr>
+        </Flex>
+      </Flex>
+    </div>
+  );
 };

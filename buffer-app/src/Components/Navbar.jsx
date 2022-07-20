@@ -5,9 +5,10 @@ import { BsStack } from "react-icons/bs";
 import { Dr } from "./Drawer";
 
 export const Navbar = () => {
+
   return (
     <div>
-      <Flex justifyContent={"space-between"} margin="20px" align={"center"}>
+      <Flex justifyContent={"space-between"} margin="10px" align={"center"}>
         <Flex
           fontSize={"27px"}
           textAlign={"center"}
@@ -91,10 +92,10 @@ export const Navbar = () => {
         </Flex>
 
         <Flex>
-          <Button colorScheme="blue" variant="link" marginRight={"10px"}>
+          <Button colorScheme="blue" variant="link" marginRight={"10px"} fontSize={"20px"}>
             Log In
           </Button>
-          <Button colorScheme="blue" variant="solid" bg="#2C4BFF">
+          <Button colorScheme="blue" variant="solid" h={"50px"} bg="#2C4BFF" fontSize={"18px"}>
             Get Started now
           </Button>
           <Dr></Dr>

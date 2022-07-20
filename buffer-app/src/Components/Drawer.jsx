@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Drawer,
   DrawerBody,
@@ -11,13 +11,21 @@ import {
   Flex,
   LinkBox,
   Text,
+  Divider,
 } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsStack } from "react-icons/bs";
+import { MdOutlineKeyboardArrowRight,MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 export const Dr = ({ display }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
+
+  const [ToolsView,setToolView]=useState(false);
+
+  const handleToolShow=()=>{
+    setToolView(!ToolsView);
+  }
   return (
     <div>
       <Button
@@ -58,13 +66,68 @@ export const Dr = ({ display }) => {
                   variant="ghost"
                   colorScheme={"white"}
                   area-label="Tools"
-                  my={5}
+                  my={3}
                   w="100%"
                   fontSize={"27px"}
                   fontWeight={"bold"}
-                >
-                  Tools
+                  onClick={handleToolShow}
+                >Tools
+                 {ToolsView ? <MdOutlineKeyboardArrowDown fontSize={"35px"}></MdOutlineKeyboardArrowDown>:<MdOutlineKeyboardArrowRight fontSize={"35px"}></MdOutlineKeyboardArrowRight>}
+                  
                 </Button>
+                {ToolsView && <Flex direction={"column"}>
+                  <Button
+                  as="a"
+                  variant="ghost"
+                  colorScheme={"white"}
+                  area-label="Tools"
+                  my={3}
+                  w="100%"
+                  fontSize={"20px"}
+                  fontWeight={"bold"}
+                >
+                  publish
+                </Button>
+
+                <Button
+                  as="a"
+                  variant="ghost"
+                  colorScheme={"white"}
+                  area-label="Tools"
+                  my={3}
+                  w="100%"
+                  fontSize={"20px"}
+                  fontWeight={"bold"}
+                >
+                  AnaLize
+                </Button>
+                <Button
+                  as="a"
+                  variant="ghost"
+                  colorScheme={"white"}
+                  area-label="Tools"
+                  my={3}
+                  w="100%"
+                  fontSize={"20px"}
+                  fontWeight={"bold"}
+                >
+                  Engage
+                </Button>
+                <Button
+                  as="a"
+                  variant="ghost"
+                  colorScheme={"white"}
+                  area-label="Tools"
+                  my={3}
+                  w="100%"
+                  fontSize={"20px"}
+                  fontWeight={"bold"}
+                >
+                  Start Page
+                </Button>
+                <Divider />
+                  
+                  </Flex>}
               </LinkBox>
               <LinkBox>
                 <Button

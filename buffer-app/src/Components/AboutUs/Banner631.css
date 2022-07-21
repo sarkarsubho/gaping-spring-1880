@@ -1,0 +1,226 @@
+.outr{
+    /* background-image: url("https: //drive.google.com/uc?export=view&id=1p84zLQAiEzNCjlz4FJNAaAThVZF8cUF0"); */
+    width: 100%;
+    height: auto;
+    border: red solid 1px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+
+}
+.innr{
+    margin: 45px;
+
+}
+.innr1 h2{
+    color: rgb(135, 194, 33);
+    text-align: center;
+    font-size: 72px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.innr1 p {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.innr2 h2{
+    color: rgb(250, 211, 42);
+    text-align: center;
+    font-size: 72px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.innr2 p {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.innr3 p {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.innr3 h2 {
+    color: rgb(233, 114, 132);
+    text-align: center;
+    font-size: 72px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.cpUkiG {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,200px);
+    grid-gap: 50px;
+    margin-top: 50px;
+}
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* @media (min-width: 64em) .lkHCMN {
+    padding-top: 110px;
+}
+
+@media (min-width: 64em) .lkHCMN {
+    padding-top: 70px;
+    padding-bottom: 70px;
+} */
+
+.lkHCMN {
+    padding-bottom: 50px;
+    position: relative;
+    padding-top: 70px;
+}
+
+section {
+    display: block;
+}
+
+/* @media (min-width: 64em) .jjVCty {
+    max-width: 900px;
+}
+
+@media (min-width: 64em) .hWAzQZ {
+    max-width: 1248px;
+}
+
+@media (min-width: 37.5em) .hWAzQZ {
+    padding: 0px 35px;
+} */
+
+.hWAzQZ {
+    margin: 0px auto;
+    padding: 0px 20px;
+    display: block;
+}
+/* @media (min-width: 64em) .cpUkiG div {
+    width: calc(25% - 60px);
+    padding: 40px 30px;
+}
+
+@media (min-width: 37.5em) .cpUkiG div {
+    width: calc(33% - 50px);
+    padding: 25px;
+} */
+
+.cpUkiG div {
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.brnd{
+    text-align: center;
+    font-size: 1.875rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+}
+
+
+.pnk {
+    margin: auto;
+    background-color: rgb(238, 157, 171);
+    border: red solid 1px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+
+.ab {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 700;
+    font-size: calc(1.375rem + (1vw - 3.75px) * 1.6901);
+
+}
+
+.imdiv {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 2em;
+    margin: auto;
+    width: 50%;
+    margin-top: 40px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.blg {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.blg p {
+    text-align: left;
+    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0px 0px 1rem;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.1px;
+    font-family: Roboto, sans-serif;
+
+}
+
+.btn {
+    margin-top: 30px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 2.6;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 0px;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    position: relative;
+    transition-property: background-color, border-color, color, box-shadow;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-width: 0px;
+    flex: 0 0 auto;
+    height: 48px;
+    font-family: Roboto, sans-serif;
+    background-color: rgb(44, 75, 255);
+    color: rgb(255, 255, 255);
+    padding: 0px 24px;
+    box-shadow: none;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: min-content;
+    display: block;
+}
+
+.btn:hover {
+    background-color: rgb(36, 36, 165);
+}

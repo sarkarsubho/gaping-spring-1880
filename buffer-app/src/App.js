@@ -1,12 +1,11 @@
-import logo from "./logo.svg";
+
 import "./App.css";
-import { Footer } from "./Components/Footer";
-import { Navbar } from "./Components/Navbar";
-import { Container } from "@chakra-ui/react";
+import AboutUs from "./Pages/AboutUs";
 
 function App() {
   return (
     <div className="App">
+      <AboutUs />
    
     </div>
   );

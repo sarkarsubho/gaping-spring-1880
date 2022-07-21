@@ -9,22 +9,34 @@ const Intro659 = () => {
   return (
     <Flex
       width="100%"
-      direction="row"
+      direction={["column", "column", "row", "row"]}
       justify="space-around"
       alignItems="center"
     >
-      <Flex width="34%" direction="column" gap="40px">
-        <Heading align="start" size="2xl" >
+      <Flex
+        width={["100%", "100%", "34%", "34%"]}
+        direction="column"
+        gap="40px"
+        padding={["10px","10px","0px","0px"]}
+      >
+        <Heading textAlign={["center", "center", "start", "start"]} size="2xl">
           Build a loyal and engaged audience on social media
         </Heading>
-        <Text align="start">
+        <Text align={["center", "center", "start", "start"]}>
           See all of your comments, stay on top of important interactions, and
           turn followers into fans using Buffer.
         </Text>
-        <Button width="55%" colorScheme="blue" padding="40px">Start a free 14-day trial</Button>
+        <Button
+          width={["100%", "100%", "55%", "55%"]}
+          colorScheme="blue"
+          padding="40px"
+          fontSize={["md","md","sm","sm"]}
+        >
+          Start a free 14-day trial
+        </Button>
       </Flex>
-      <Box width="40%">
-        <video autoPlay loop muted >
+      <Box width={["100%", "100%", "40%", "40%"]}>
+        <video autoPlay loop muted>
           <source src={intro} type="video/mp4" />
         </video>
       </Box>

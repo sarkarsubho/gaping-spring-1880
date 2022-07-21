@@ -6,7 +6,7 @@ import { Container } from "@chakra-ui/react";
 function App() {
   return (
     <div className="App">
-      <Container maxW={["100%", "100%", "100%", "75%"]}>
+      <Container maxW={["100%", "100%", "100%", "75%"]} >
         <Navbar></Navbar>
         <MainRoutes></MainRoutes>
 

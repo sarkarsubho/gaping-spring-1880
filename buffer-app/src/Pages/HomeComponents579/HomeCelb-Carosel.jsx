@@ -1,84 +1,221 @@
 import {
-    Heading,
-    Avatar,
-    Box,
-    Center,
-    Image,
-    Flex,
-    Text,
-    Stack,
-    Button,
-    useColorModeValue,
-  } from '@chakra-ui/react';
-  
-  export default function HomeCelbCarosel() {
-    return (
-      <Center py={6}>
-        <Box
-          maxW={'270px'}
-          w={'full'}
-          bg={useColorModeValue('white', 'gray.800')}
-          boxShadow={'2xl'}
-          rounded={'md'}
-          overflow={'hidden'}>
-          <Image
-            h={'120px'}
-            w={'full'}
-            src={
-              'https://images.unsplash.com/photo-1612865547334-09cb8cb455da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
-            }
-            objectFit={'cover'}
-          />
-          <Flex justify={'center'} mt={-32}>
-            <Avatar
-              size={'xl'}
-              src={
-                'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ'
-              }
-              alt={'Author'}
-              css={{
-                border: '2px solid white',
-              }}
-            />
-          </Flex>
-  
-          <Box p={6}>
-            <Stack spacing={0} align={'center'} mb={5}>
-              <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'}>
-                John Doe
-              </Heading>
-              <Text color={'gray.500'}>Frontend Developer</Text>
-            </Stack>
-  
-            <Stack direction={'row'} justify={'center'} spacing={6}>
-              <Stack spacing={0} align={'center'}>
-                <Text fontWeight={600}>23k</Text>
-                <Text fontSize={'sm'} color={'gray.500'}>
-                  Followers
+  Heading,
+  Avatar,
+  Box,
+  Flex,
+  Text,
+  Stack,
+  Image,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import styles from "./Style.module.css";
+import Lizbrand from "../../data/Lizbrand.png";
+import Troybrand from "../../data/Troybrand.png";
+import joe from "../../data/joe.png";
+import Luis from "../../data/Luis.png";
+import Redrigo from "../../data/Redrigo.png";
+import Marquee from "react-fast-marquee";
+
+export default function HomeCelbCarosel() {
+  return (
+    <div className={styles.slider}>
+      <div className={styles.slidertrack}>
+     
+     
+
+     
+          {/* box 1 */}
+          <Box
+            maxW={"390px"}
+            w={"full"}
+            bg={useColorModeValue("white", "gray.800")}
+            className={`${styles.caroselBoxShado} ${styles.slide}`}
+            rounded={"md"}
+          >
+            <Flex justify={"center"} mt={0}>
+              <Avatar
+                size={"xl"}
+                mt={-65}
+                className={styles.caroselavetar}
+                src={
+                  "https://static.buffer.com/cdn-cgi/image/w=128,quality=90,format=auto/marketing/static/testimonials/liz-gillis-dress-up@2x-mobile.jpg"
+                }
+                alt={"Author"}
+                css={{
+                  border: "2px solid white",
+                }}
+              />
+            </Flex>
+
+            <Box p={6}>
+              <Stack spacing={0} align={"center"} mb={5} gap={"30px"}>
+                <Text color={"gray.500"}>
+                  On social, we need to be fast, efficient, and intentional.
+                  Buffer allows us to be exactly that.
                 </Text>
+                <Image src={Lizbrand}></Image>
+
+                <Heading as="h5" size="sm">
+                  Liz Gillis, Digital Marketer
+                </Heading>
               </Stack>
-              <Stack spacing={0} align={'center'}>
-                <Text fontWeight={600}>23k</Text>
-                <Text fontSize={'sm'} color={'gray.500'}>
-                  Followers
-                </Text>
-              </Stack>
-            </Stack>
-  
-            <Button
-              w={'full'}
-              mt={8}
-              bg={useColorModeValue('#151f21', 'gray.900')}
-              color={'white'}
-              rounded={'md'}
-              _hover={{
-                transform: 'translateY(-2px)',
-                boxShadow: 'lg',
-              }}>
-              Follow
-            </Button>
+            </Box>
           </Box>
-        </Box>
-      </Center>
-    );
-  }
+
+          {/* box 2 */}
+          <Box
+            maxW={"390px"}
+            w={"full"}
+            bg={useColorModeValue("white", "gray.800")}
+            className={`${styles.caroselBoxShado} ${styles.slide}`}
+            rounded={"md"}
+          >
+            <Flex justify={"center"} mt={0}>
+              <Avatar
+                size={"xl"}
+                mt={-65}
+                className={styles.caroselavetar}
+                src={
+                  "https://static.buffer.com/cdn-cgi/image/w=128,quality=90,format=auto/marketing/static/testimonials/troy-petrunoff@mobile.jpg"
+                }
+                alt={"Author"}
+                css={{
+                  border: "2px solid white",
+                }}
+              />
+            </Flex>
+
+            <Box p={6}>
+              <Stack spacing={0} align={"center"} mb={5} gap={"30px"}>
+                <Text color={"gray.500"}>
+                  For a marketing team with a lot on our plates, Buffer is a
+                  crucial tool in our brand-building efforts.
+                </Text>
+                <Image src={Troybrand}></Image>
+
+                <Heading as="h5" size="sm">
+                  Troy Petrunoff, Marketing Manager
+                </Heading>
+              </Stack>
+            </Box>
+          </Box>
+
+          {/* box 3 */}
+          <Box
+            maxW={"390px"}
+            w={"full"}
+            bg={useColorModeValue("white", "gray.800")}
+            className={`${styles.caroselBoxShado} ${styles.slide}`}
+            rounded={"md"}
+          >
+            <Flex justify={"center"} mt={0}>
+              <Avatar
+                size={"xl"}
+                mt={-65}
+                className={styles.caroselavetar}
+                src={
+                  "https://static.buffer.com/cdn-cgi/image/w=128,quality=90,format=auto/marketing/static/testimonials/luis-cancel-huckberry-mobile.jpg"
+                }
+                alt={"Author"}
+                css={{
+                  border: "2px solid white",
+                }}
+              />
+            </Flex>
+
+            <Box p={6}>
+              <Stack spacing={0} align={"center"} mb={5} gap={"30px"}>
+                <Text color={"gray.500"}>
+                  Buffer has made sharing our story and building our brand on
+                  social media so much easier.
+                </Text>
+                <Image src={Luis}></Image>
+
+                <Heading as="h5" size="sm">
+                  Luis Cancel, Managing Editor
+                </Heading>
+              </Stack>
+            </Box>
+          </Box>
+
+          {/* box 4 */}
+          <Box
+            maxW={"390px"}
+            w={"full"}
+            bg={useColorModeValue("white", "gray.800")}
+            className={`${styles.caroselBoxShado} ${styles.slide}`}
+            rounded={"md"}
+          >
+            <Flex justify={"center"} mt={0}>
+              <Avatar
+                size={"xl"}
+                mt={-65}
+                className={styles.caroselavetar}
+                src={
+                  "https://static.buffer.com/cdn-cgi/image/w=128,quality=90,format=auto/marketing/static/testimonials/rodrigo-hyago-happysocks@mobile.jpg"
+                }
+                alt={"Author"}
+                css={{
+                  border: "2px solid white",
+                }}
+              />
+            </Flex>
+
+            <Box p={6}>
+              <Stack spacing={0} align={"center"} mb={5} gap={"30px"}>
+                <Text color={"gray.500"}>
+                  Buffer makes it easy for us to monitor all of our engagement
+                  and strengthen the connection with our audience.
+                </Text>
+                <Image src={Redrigo}></Image>
+
+                <Heading as="h5" size="sm">
+                  Rodrigo Hyago, Social Media Content Manager
+                </Heading>
+              </Stack>
+            </Box>
+          </Box>
+
+          {/* box 5 */}
+          <Box
+            maxW={"390px"}
+            w={"full"}
+            bg={useColorModeValue("white", "gray.800")}
+            className={`${styles.caroselBoxShado} ${styles.slide}`}
+            rounded={"md"}
+          >
+            <Flex justify={"center"} mt={0}>
+              <Avatar
+                size={"xl"}
+                mt={-65}
+                className={styles.caroselavetar}
+                src={
+                  "https://static.buffer.com/cdn-cgi/image/w=128,quality=90,format=auto/marketing/static/testimonials/joe-mercy-for-animals@mobile.jpg"
+                }
+                alt={"Author"}
+                css={{
+                  border: "2px solid white",
+                }}
+              />
+            </Flex>
+
+            <Box p={6}>
+              <Stack spacing={0} align={"center"} mb={5} gap={"30px"}>
+                <Text color={"gray.500"}>
+                  Buffer saves us, literally, hours and in turn helps us spread
+                  our message even further.
+                </Text>
+                <Image src={joe}></Image>
+
+                <Heading as="h5" size="sm">
+                  Joe Loria, Content Manager{" "}
+                </Heading>
+              </Stack>
+            </Box>
+          </Box>
+          
+         
+      </div>
+    </div>
+  );
+}

@@ -1,19 +1,21 @@
 import React from 'react'
 import styled from "styled-components"
+import PublishIntro395 from '../Components/PublishPageComponents/PublishIntro395'
 
 const PublishPage = () => {
   return (
     <div>
         {/* Intro*/}
-        <section>
-            Intro
-            <p>Build your audience and grow your brand on social media<br/>
-             Plan and publish your content for Instagram, TikTok, Facebook, Twitter, Pinterest, and LinkedIn, all from one simple dashboard.</p>
+        {/* <section>
+          Intro
+          <p>Build your audience and grow your brand on social media<br/>
+            Plan and publish your content for Instagram, TikTok, Facebook, Twitter, Pinterest, and LinkedIn, all from one simple dashboard.</p>
         <button>getStarted</button>
         <video autoPlay loop muted>
             <source />
         </video>
-        </section>
+        </section> */}
+        <PublishIntro395/>
         {/* Client5 */}
         <section>
             Client

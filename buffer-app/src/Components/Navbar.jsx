@@ -92,10 +92,10 @@ export const Navbar = () => {
         </Flex>
 
         <Flex>
-          <Button colorScheme="blue" variant="link" marginRight={"10px"} fontSize={"20px"}>
+          <Button colorScheme="blue" variant="link" marginRight={"10px"} fontSize={"20px"} display={["none" ,"none","view","view"]}>
             Log In
           </Button>
-          <Button colorScheme="blue" variant="solid" h={"50px"} bg="#2C4BFF" fontSize={"18px"}>
+          <Button colorScheme="blue" variant="solid" h={"50px"} bg="#2C4BFF" marginLeft={"10px"} fontSize={"18px"}>
             Get Started now
           </Button>
           <Dr></Dr>

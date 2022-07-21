@@ -43,6 +43,8 @@ export const Dr = ({ display }) => {
         size={"full"}
         finalFocusRef={btnRef}
         placement="right"
+        
+        
       >
         <DrawerOverlay />
         <DrawerContent background={"#2C4BFF"} color="white">

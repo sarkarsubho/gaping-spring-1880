@@ -13,11 +13,12 @@ import {
     Text,
     useColorModeValue,
     Link,
+    EditableTextarea,
   } from '@chakra-ui/react';
   import { useReducer, useState } from 'react';
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
   import {Link as RouterLink} from "react-router-dom"
-  import { Editable,EditableInput,EditablePreview } from '@chakra-ui/react/dist/declarations/src';
+  import { Editable,EditableInput,EditablePreview } from '@chakra-ui/react';
 
 
 
@@ -28,6 +29,33 @@ import {
                 ...state,
                 name:action.payload
             }
+        case "email":
+             return{
+                  ...state,
+                  email:action.payload
+            }
+            case "password":
+              return{
+                  ...state,
+                  password:action.payload
+              }
+              case "username":
+            return{
+                ...state,
+                username:action.payload
+            }
+            case "mobile":
+            return{
+                ...state,
+                mobile:action.payload
+            }
+            case "description":
+            return{
+                ...state,
+                description:action.payload
+            }
+            default:
+              return state;
     }
   }
 
@@ -70,19 +98,19 @@ import {
                 <Box>
                   <FormControl id="Name" isRequired>
                     <FormLabel>Name</FormLabel>
-                    <Input type="text" />
+                    <Input type="text" value={state.name} onChange={(e)=>dispatch({type:"name", payload:e.target.value})}/>
                   </FormControl>
                 </Box>
                 <Box>
                   <FormControl id="username" isRequired>
                     <FormLabel>username</FormLabel>
-                    <Input type="text" />
+                    <Input type="text" value={state.username} onChange={(e)=>dispatch({type:"username", payload:e.target.value})}/>
                   </FormControl>
                 </Box>
               </HStack>
               <FormControl id="email" isRequired>
                 <FormLabel>Email address</FormLabel>
-                <Input type="email" />
+                <Input type="email" value={state.email} onChange={(e)=>dispatch({type:"email", payload:e.target.value})}/>
               </FormControl>
               <FormControl id="password" isRequired>
                 <FormLabel>Password</FormLabel>
@@ -91,6 +119,7 @@ import {
                   <InputRightElement h={'full'}>
                     <Button
                       variant={'ghost'}
+                      value={state.password} onChange={(e)=>dispatch({type:"password", payload:e.target.value})}
                       onClick={() =>
                         setShowPassword((showPassword) => !showPassword)
                       }>
@@ -102,13 +131,13 @@ import {
               <Box>
                   <FormControl id="mobile" isRequired>
                     <FormLabel>Mobile</FormLabel>
-                    <Input type="number" />
+                    <Input type="number" value={state.mobile} onChange={(e)=>dispatch({type:"mobile", payload:e.target.value})}/>
                   </FormControl>
                 </Box>
               <Box>
                 <Editable defaultValue="Description">
                     <EditablePreview/>
-                    <EditableInput/>
+                    <EditableTextarea value={state.description} onChange={(e)=>dispatch({type:"description", payload:e.target.value})}/>
                 </Editable>
               </Box>
               <Stack spacing={10} pt={2}>

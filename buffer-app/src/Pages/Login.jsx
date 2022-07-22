@@ -12,9 +12,35 @@ import {
     Text,
     useColorModeValue,
   } from '@chakra-ui/react';
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux/es/exports';
+import { LOGIN_SUCCESS } from '../Redux/AuthReducer/actionTypes';
   
-  import {Link as RouterLink} from "react-router-dom"
+import {Link as RouterLink, useNavigate} from "react-router-dom"
+import { login } from '../Redux/AuthReducer/action';
   export default function Login() {
+   const [username,setUsername]= useState("");
+   const [password,setPassword]= useState("");
+   const dispatch = useDispatch();
+   const navigate = useNavigate();
+   const isLoading = useSelector((state) => state.AuthReduser.isLoading);
+
+   const LoginHandler = ()=>{
+     if(username && password){
+      const params={
+        username,password
+      }
+      dispatch(login(params)).then(res=>{
+        if(res===LOGIN_SUCCESS){
+            navigate("/",{replace:true})
+        }
+        else{
+          <h1>Page not found</h1>
+        }
+      })
+     }
+   }
+
     return (
       <Flex
         minH={'100vh'}
@@ -34,13 +60,13 @@ import {
             boxShadow={'lg'}
             p={8}>
             <Stack spacing={4}>
-              <FormControl id="email">
-                <FormLabel>Email address</FormLabel>
-                <Input type="email" />
+              <FormControl id="username">
+                <FormLabel>Username</FormLabel>
+                <Input type="text" value={username} onChange={(e)=>setUsername(e.target.value)}/>
               </FormControl>
               <FormControl id="password">
                 <FormLabel>Password</FormLabel>
-                <Input type="password" />
+                <Input type="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
               </FormControl>
               <Stack spacing={10}>
                 <Stack
@@ -55,7 +81,8 @@ import {
                   color={'white'}
                   _hover={{
                     bg: 'blue.500',
-                  }}>
+                  }}
+                  onClick={LoginHandler}>
                   Sign in
                 </Button>
               </Stack>

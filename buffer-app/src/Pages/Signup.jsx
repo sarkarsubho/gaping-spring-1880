@@ -91,23 +91,21 @@ import { useDispatch } from 'react-redux';
         minH={'100vh'}
         align={'center'}
         justify={'center'}
-        bg={useColorModeValue('gray.50', 'gray.800')}>
-        <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
-          <Stack align={'center'}>
-            <Heading fontSize={'4xl'} textAlign={'center'}>
-              Sign up
+        >
+        <Stack spacing={1} mx={'auto'} maxW={'lg'} py={12} px={6}>
+          <Stack align={'left'}>
+            <Heading fontSize={'3xl'} textAlign={'left'}>
+              Let's get your account set up
             </Heading>
             <Text fontSize={'lg'} color={'gray.600'}>
-              to enjoy all of our cool features ✌️
             </Text>
           </Stack>
           <Box
             rounded={'lg'}
             bg={useColorModeValue('white', 'gray.700')}
-            boxShadow={'lg'}
             p={8}>
-            <Stack spacing={4}>
-              <HStack>
+            <Stack spacing={2} marginLeft={"-30px"}>
+              <HStack >
                 <Box>
                   <FormControl id="Name" isRequired>
                     <FormLabel>Name</FormLabel>
@@ -122,11 +120,11 @@ import { useDispatch } from 'react-redux';
                 </Box>
               </HStack>
               <FormControl id="email" isRequired>
-                <FormLabel>Email address</FormLabel>
+                <FormLabel>Email</FormLabel>
                 <Input type="email" value={state.email} onChange={(e)=>setter({type:"email", payload:e.target.value})}/>
               </FormControl>
               <FormControl id="password" isRequired>
-                <FormLabel>Password</FormLabel>
+                <FormLabel>Create a Password</FormLabel>
                 <InputGroup>
                   <Input type={showPassword ? 'text' : 'password'} value={state.password} onChange={(e)=>setter({type:"password", payload:e.target.value})}/>
                   <InputRightElement h={'full'}>

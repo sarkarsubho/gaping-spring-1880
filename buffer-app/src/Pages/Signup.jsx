@@ -1,6 +1,7 @@
 import {
     Flex,
     Box,
+    Image,
     FormControl,
     FormLabel,
     Input,
@@ -14,6 +15,7 @@ import {
     useColorModeValue,
     Link,
     EditableTextarea,
+    Container,
   } from '@chakra-ui/react';
   import { useReducer, useState } from 'react';
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
@@ -87,12 +89,14 @@ import { useDispatch } from 'react-redux';
     }
   
     return (
+      <>
       <Flex
+        border={"1px solid red"}
         minH={'100vh'}
-        align={'center'}
-        justify={'center'}
+        align={'left'}
+        justify={'left'}
         >
-        <Stack spacing={1} mx={'auto'} maxW={'lg'} py={12} px={6}>
+        <Stack spacing={1} marginLeft={"7rem"} maxW={'lg'} py={12} px={6}>
           <Stack align={'left'}>
             <Heading fontSize={'3xl'} textAlign={'left'}>
               Let's get your account set up
@@ -171,6 +175,15 @@ import { useDispatch } from 'react-redux';
             </Stack>
           </Box>
         </Stack>
+        <Image src='Buffersignupimage copy.png' alt="" boxSize='100px'
+        objectFit='cover'/>
       </Flex>
+      <Image src='/Pages/Images/Buffersignupimage.png' alt="" boxSize='100px'
+        objectFit='cover'/>
+      <img src="Images/Buffersignupimage.png" alt="" width={'100px'} height={'100px'}/>
+      <Image src='/Images/Buffersignupimage.png' alt="" boxSize='100px'
+        objectFit='cover'/>
+      </>
+      
     );
   }

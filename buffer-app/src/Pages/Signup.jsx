@@ -18,7 +18,7 @@ import {
   import { useReducer, useState } from 'react';
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
   import {Link as RouterLink} from "react-router-dom"
-  import { Editable,EditableInput,EditablePreview } from '@chakra-ui/react';
+  import { Editable,EditablePreview } from '@chakra-ui/react';
 
 
 
@@ -72,6 +72,7 @@ import {
   export default function Signup() {
     const [showPassword, setShowPassword] = useState(false);
     const [state,dispatch] = useReducer(reducer,initialState)
+    console.log(state)
   
     return (
       <Flex
@@ -115,11 +116,10 @@ import {
               <FormControl id="password" isRequired>
                 <FormLabel>Password</FormLabel>
                 <InputGroup>
-                  <Input type={showPassword ? 'text' : 'password'} />
+                  <Input type={showPassword ? 'text' : 'password'} value={state.password} onChange={(e)=>dispatch({type:"password", payload:e.target.value})}/>
                   <InputRightElement h={'full'}>
                     <Button
                       variant={'ghost'}
-                      value={state.password} onChange={(e)=>dispatch({type:"password", payload:e.target.value})}
                       onClick={() =>
                         setShowPassword((showPassword) => !showPassword)
                       }>

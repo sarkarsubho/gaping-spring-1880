@@ -1,34 +1,35 @@
 .caroselavetar {
-  -webkit-filter: grayscale(100%); 
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
 .caroselBoxShado {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    /* width: fit-content; */
 }
 
-.slidertrack{
-    display: flex;
-    justify-content: center;
-    gap: "30px";
-}
 
- .slider {
-  border: 1px solid red;
-  height: 390px;
-  margin: auto;
+.slider {
+  height: 490px;
   position: relative;
-  width: 390px;
+  width: 100%;
   display: grid;
   place-content: center;
+  overflow-x: hidden;
 }
 
 .slidertrack {
-  border: 1px solid green;
+ 
   display: flex; 
-   width: calc(390px * 10); 
-  animation: scroll 10s linear infinite;
+   width: calc(390px * 15); 
+  animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-390px * 5));
+  }
 }
 .slidertrack:hover{
     animation-play-state: paused;
@@ -37,35 +38,9 @@
   margin: 20px;
   width: 390px;
   align-items: center;
-  padding: 15px;
-  
-  perspective: 100px;
 }
-.slider::before,
-.slider::after {
-  content: "";
-  height: 100%;
-  position: absolute;
-  width: 15%;
-  z-index: 2;
-}
-.slider::before {
-  right: 0;
-  top: 0;
-}
-.slider::after{
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-} 
+
 /* generating shaddo bot */
 
 /* infinite scrolle */
- @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-370px * 6));
-  }
-}
+

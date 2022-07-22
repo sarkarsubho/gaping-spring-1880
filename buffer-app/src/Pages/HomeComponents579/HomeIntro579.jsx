@@ -5,7 +5,7 @@ import {
   Image,
   Stack,
   Text,
-  Box,
+ 
   AspectRatio,
 } from "@chakra-ui/react";
 import { BsPlayCircle } from "react-icons/bs";
@@ -13,8 +13,7 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
-  ModalFooter,
+ 
   ModalBody,
   ModalCloseButton,
   useDisclosure,

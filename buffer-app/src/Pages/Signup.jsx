@@ -17,9 +17,11 @@ import {
   } from '@chakra-ui/react';
   import { useReducer, useState } from 'react';
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
-  import {Link as RouterLink} from "react-router-dom"
+  import {Link as RouterLink, useNavigate} from "react-router-dom"
   import { Editable,EditablePreview } from '@chakra-ui/react';
-
+import { register } from '../Redux/AuthReducer/action';
+import {REGISTER_SUCCESS} from "../Redux/AuthReducer/actionTypes"
+import { useDispatch } from 'react-redux';
 
 
   function reducer(state,action){
@@ -71,8 +73,18 @@ import {
   
   export default function Signup() {
     const [showPassword, setShowPassword] = useState(false);
-    const [state,dispatch] = useReducer(reducer,initialState)
-    console.log(state)
+    const [state,setter] = useReducer(reducer,initialState)
+    const navigate = useNavigate();
+    const dispattch = useDispatch();
+
+
+    const SignupHandler = ()=>{
+      dispattch(register(state)).then((r)=>{
+        if(r===REGISTER_SUCCESS){
+          navigate("/login",{replace:true})
+        }
+      })
+    }
   
     return (
       <Flex
@@ -99,24 +111,24 @@ import {
                 <Box>
                   <FormControl id="Name" isRequired>
                     <FormLabel>Name</FormLabel>
-                    <Input type="text" value={state.name} onChange={(e)=>dispatch({type:"name", payload:e.target.value})}/>
+                    <Input type="text" value={state.name} onChange={(e)=>setter({type:"name", payload:e.target.value})}/>
                   </FormControl>
                 </Box>
                 <Box>
                   <FormControl id="username" isRequired>
                     <FormLabel>username</FormLabel>
-                    <Input type="text" value={state.username} onChange={(e)=>dispatch({type:"username", payload:e.target.value})}/>
+                    <Input type="text" value={state.username} onChange={(e)=>setter({type:"username", payload:e.target.value})}/>
                   </FormControl>
                 </Box>
               </HStack>
               <FormControl id="email" isRequired>
                 <FormLabel>Email address</FormLabel>
-                <Input type="email" value={state.email} onChange={(e)=>dispatch({type:"email", payload:e.target.value})}/>
+                <Input type="email" value={state.email} onChange={(e)=>setter({type:"email", payload:e.target.value})}/>
               </FormControl>
               <FormControl id="password" isRequired>
                 <FormLabel>Password</FormLabel>
                 <InputGroup>
-                  <Input type={showPassword ? 'text' : 'password'} value={state.password} onChange={(e)=>dispatch({type:"password", payload:e.target.value})}/>
+                  <Input type={showPassword ? 'text' : 'password'} value={state.password} onChange={(e)=>setter({type:"password", payload:e.target.value})}/>
                   <InputRightElement h={'full'}>
                     <Button
                       variant={'ghost'}
@@ -131,13 +143,13 @@ import {
               <Box>
                   <FormControl id="mobile" isRequired>
                     <FormLabel>Mobile</FormLabel>
-                    <Input type="number" value={state.mobile} onChange={(e)=>dispatch({type:"mobile", payload:e.target.value})}/>
+                    <Input type="number" value={state.mobile} onChange={(e)=>setter({type:"mobile", payload:e.target.value})}/>
                   </FormControl>
                 </Box>
               <Box>
                 <Editable defaultValue="Description">
                     <EditablePreview/>
-                    <EditableTextarea value={state.description} onChange={(e)=>dispatch({type:"description", payload:e.target.value})}/>
+                    <EditableTextarea value={state.description} onChange={(e)=>setter({type:"description", payload:e.target.value})}/>
                 </Editable>
               </Box>
               <Stack spacing={10} pt={2}>
@@ -148,7 +160,8 @@ import {
                   color={'white'}
                   _hover={{
                     bg: 'blue.500',
-                  }}>
+                  }}
+                  onClick={SignupHandler}>
                   Sign up
                 </Button>
               </Stack>

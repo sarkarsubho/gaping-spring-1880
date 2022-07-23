@@ -35,7 +35,7 @@ export const Pricing579 = () => {
     setsubstype(val);
   };
   return (
-    <div>
+    <Container maxWidth={"full"} alignItems={"center"}>
       <Center mt={"8rem"}>
         <Flex direction={"column"}>
           <Box fontSize={["xx-small", "md", "lg", "4xl"]} mb={"2rem"}>
@@ -126,21 +126,23 @@ export const Pricing579 = () => {
         </Flex>
       </Center>
 
-      <Box margin={"50px 0"}>
-        <Box
-          maxW={"100%"}
-          h={["2100px", "2100px", "1200px", "1200px", "400px"]}
-          // border={"2px solid green"}
-          position="absolute"
-          bgImg={PricingBG}
-          zIndex={-1}
-          mt={"8rem"}
-          bgSize="cover"
-        >
-          <Image src={PricingBG}></Image>
+      <Center>
+        <Box margin={"50px auto"} width={"100%"}>
+          <Box
+            maxW={"100%"}
+            h={["2100px", "2100px", "1200px", "1200px", "400px"]}
+            // border={"2px solid green"}
+            position="absolute"
+            bgImg={PricingBG}
+            zIndex={-1}
+            mt={"8rem"}
+            bgSize="cover"
+          >
+            <Image src={PricingBG} w="100%"></Image>
+          </Box>
+          <PriceTag substype={substype}></PriceTag>
         </Box>
-        <PriceTag substype={substype}></PriceTag>
-      </Box>
+      </Center>
 
       <Flex
         direction={"row"}
@@ -158,10 +160,9 @@ export const Pricing579 = () => {
         </Heading>
       </Center>
       <PricingBlock579></PricingBlock579>
-      
+
       <BlueBox659></BlueBox659>
-     
-    </div>
+    </Container>
   );
 };
 

@@ -6,6 +6,7 @@ import { Pricing579 } from "./Pricing579";
 
 import Login from "./Login"
 import Signup from "./Signup"
+import { Center } from "@chakra-ui/react";
 
 
 const MainRoutes = () => {
@@ -13,7 +14,7 @@ const MainRoutes = () => {
     <Routes>
 
       <Route path="/" element={<Home579></Home579>}> </Route>
-      <Route path="/pricing" element={<Pricing579></Pricing579>}></Route>
+      <Route path="/pricing" element={<Center><Pricing579></Pricing579></Center>}></Route>
 
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}/>

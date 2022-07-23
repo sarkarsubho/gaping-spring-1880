@@ -1,6 +1,7 @@
 import React from 'react'
 import { Heading, Avatar, Box, Container, Image,Text, Button, Flex } from "@chakra-ui/react";
 import styles from "./Round.module.css";
+import { Link } from 'react-router-dom';
 
 export const RoundCarousel659 = () => {
   return (
@@ -11,13 +12,29 @@ export const RoundCarousel659 = () => {
       bgColor="whitesmoke"
       align="center"
     >
-      <Flex direction="column" maxW={["90%","90%","35%","35%"]} gap="40px" align="center" paddingTop="80px">
-        <Heading size="lg" fontWeight="extrabold">Trusted by business and creators</Heading>
+      <Flex
+        direction="column"
+        maxW={["90%", "90%", "35%", "35%"]}
+        gap="40px"
+        align="center"
+        paddingTop="80px"
+      >
+        <Heading size="lg" fontWeight="extrabold">
+          Trusted by business and creators
+        </Heading>
         <Text>
           Join thousands of small business, coaches, influencers, artists,
           entrepreneurs, and many more already using Start Page.
         </Text>
-        <Button bgColor="blue.400" color="white" width={["90%","90%","60%","60%"]} padding="30px" >Create your Start Page for free</Button>
+        <Link to="/signup">
+          <Button
+            bgColor="blue.400"
+            color="white"
+            padding="30px"
+          >
+            Create your Start Page for free
+          </Button>
+        </Link>
       </Flex>
       <div className={styles.slider}>
         <div className={styles.slidertrack}>

@@ -1,5 +1,6 @@
 import { Box, Button, Container, Flex, Heading,Text } from '@chakra-ui/react'
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const StartPageIntro659 = () => {
   return (
@@ -18,13 +19,16 @@ const StartPageIntro659 = () => {
           brings together all of your best content in one place. Share it in
           your bios on Instagram, YouTube, TikTok, or any other social profiles.
         </Text>
+        <Link to="/signup">
         <Button
           bgColor="blue.400"
           padding="40px"
-          width={["90%", "90%", "50%", "50%"]}
+          color="white"
+          
         >
           Create your Start Page for free
         </Button>
+        </Link>
       </Flex>
     
   );

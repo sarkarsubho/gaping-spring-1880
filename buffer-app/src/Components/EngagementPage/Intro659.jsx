@@ -3,6 +3,7 @@ import React from 'react'
 import intro from "../data/intro.mp4"
 import { Heading,Image } from "@chakra-ui/react";
 import ss from "../data/Screenshot.png"
+import { Link } from 'react-router-dom';
 
 
 
@@ -31,6 +32,7 @@ const Intro659 = () => {
             See all of your comments, stay on top of important interactions, and
             turn followers into fans using Buffer.
           </Text>
+          <Link to="/pricing" align="start">
           <Button
             width={["100%", "100%", "55%", "55%"]}
             colorScheme="blue"
@@ -38,7 +40,7 @@ const Intro659 = () => {
             fontSize={["md", "md", "sm", "sm"]}
           >
             Start a free 14-day trial
-          </Button>
+          </Button></Link>
         </Flex>
         <Box width={["100%", "100%", "40%", "40%"]}>
           <video autoPlay loop muted>
@@ -47,7 +49,7 @@ const Intro659 = () => {
         </Box>
       </Flex>
       <Box mt="80px">
-      <Image src={ss}></Image>
+        <Image src={ss}></Image>
       </Box>
     </Box>
   );

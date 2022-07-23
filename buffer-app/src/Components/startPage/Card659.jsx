@@ -1,5 +1,6 @@
 import { Box, Button, Flex, Heading,Text,Image } from '@chakra-ui/react'
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Card659 = ({head,txt,imglink}) => {
   return (
@@ -22,9 +23,10 @@ const Card659 = ({head,txt,imglink}) => {
           {head}
         </Heading>
         <Text align={["center", "center", "start", "start"]}>{txt}</Text>
-        <Button bgColor="blue.300" padding="30px">
+        <Link to="/signup">
+        <Button bgColor="blue.400" color="white" padding="30px">
           Create your Start Page for free
-        </Button>
+        </Button></Link>
       </Flex>
       <Image src={imglink} width={["100%", "100%", "41%", "41%"]}></Image>
     </Flex>

@@ -21,7 +21,7 @@ const PublishPage = () => {
         <PublishTikTokSection395/>
         <PublishBlueBanner/>
         <PublishColab395/>
-        <br /> <br />
+        <br /> <br /> 
         <PublishQuote395/>
        <br /> <br />
         <PublishPlanningSection/>

@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
+#"https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
 User-agent: *
 Disallow:

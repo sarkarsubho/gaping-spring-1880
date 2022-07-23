@@ -1,0 +1,41 @@
+
+.caroselBoxShado {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+
+.slider {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  overflow-x: hidden;
+}
+
+.slidertrack {
+ 
+  display: flex; 
+   width: calc(300px * 30); 
+  animation: scroll 80s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-300px * 10));
+  }
+}
+.slidertrack:hover{
+    animation-play-state: paused;
+}
+.slide {
+  margin: 20px;
+  width: 300px;
+  align-items: center;
+}
+
+/* generating shaddo bot */
+
+/* infinite scrolle */
+

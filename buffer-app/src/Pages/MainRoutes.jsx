@@ -29,8 +29,8 @@ const MainRoutes = () => {
         <Route path="/engagepage" element={<EngagementPage />} />
         <Route path="/publish" element={<PublishPage/>}/>
     <Route path="/analyze" element={<AnalyzePage/>}/>
-    <Route path="/AboutUs" element={<AboutUs />} />
-      <Route path="/Customer" element={<Customer />} />
+    <Route path="/aboutus" element={<AboutUs />} />
+      <Route path="/customer" element={<Customer />} />
 
     </Routes>
   </div>;

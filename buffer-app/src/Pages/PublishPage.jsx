@@ -1,4 +1,5 @@
 import React from 'react'
+import PublishBlueBanner from '../Components/PublishPageComponents/PublishBlueBanner'
 import PublishInstaSection395 from '../Components/PublishPageComponents/PublishInstaSection395'
 // import styled from "styled-components"
 import PublishIntro395 from '../Components/PublishPageComponents/PublishIntro395'
@@ -18,6 +19,7 @@ const PublishPage = () => {
         {/* {Instagram Section} */}
         
         <PublishInstaSection395/>
+        <PublishBlueBanner/>
         {/* Colab section */}
         <section>
           <h3>Colab Section</h3>

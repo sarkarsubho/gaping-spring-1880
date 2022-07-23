@@ -1,9 +1,9 @@
 import { legacy_createStore, combineReducers,applyMiddleware ,compose} from "redux";
 import thunk from "redux-thunk";
-import { reduser as AuthReduser } from "./Auth/reduser";
+import { reducer as AuthReduser } from "./AuthReducer/reducer";
 
 const rootReduser=combineReducers({
-    auth:AuthReduser
+    AuthReduser
 })
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

@@ -1,21 +1,23 @@
 
 import "./App.css";
-
+import { Navbar } from "./Components/Navbar";
+import MainRoutes from "./Pages/MainRoutes";
 import { Container } from "@chakra-ui/react";
-import MainRoutes from "./Pages/MainRoutes"
 
-import StartPage from "./Pages/StartPage";
+import { Footer } from "./Components/Footer";
+
+
 
 function App() {
   return (
     <div className="App">
-    fw15_074_day3
-   <Container minWidth={'6xl'}>
-    <MainRoutes/>
-   </Container>
 
-    <StartPage />
- main
+      <Container maxW={["100%", "100%", "100%", "100%"]} >
+        <Navbar></Navbar>
+        <MainRoutes></MainRoutes>
+        <Footer></Footer>
+      </Container>
+
     </div>
   );
 }

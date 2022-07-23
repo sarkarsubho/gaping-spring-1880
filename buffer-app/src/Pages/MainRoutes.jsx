@@ -1,3 +1,6 @@
+
+
+
 import React from "react"
 import { Routes ,Route} from "react-router-dom";
 import EngagementPage from "./EngagementPage";
@@ -7,7 +10,8 @@ import { Pricing579 } from "./Pricing579";
 import Login from "./Login"
 import Signup from "./Signup"
 import { Center } from "@chakra-ui/react";
-
+import AnalyzePage from "./AnalyzePage";
+import PublishPage from "./PublishPage";
 
 const MainRoutes = () => {
   return <div>
@@ -20,9 +24,12 @@ const MainRoutes = () => {
       <Route path="/signup" element={<Signup/>}/>
       <Route path="/startpage" element={<StartPage />} />
         <Route path="/engagepage" element={<EngagementPage />} />
+        <Route path="/publish" element={<PublishPage/>}/>
+    <Route path="/analyze" element={<AnalyzePage/>}/>
 
     </Routes>
   </div>;
+
 
 };
 

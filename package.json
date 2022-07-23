@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@chakra-ui/icons": "^2.0.4",
-    "react-router-dom": "^6.3.0"
-  }
-}

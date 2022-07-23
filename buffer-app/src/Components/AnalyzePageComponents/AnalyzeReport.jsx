@@ -29,25 +29,25 @@ const AnalyzeReport = () => {
                 <Grid templateColumns='repeat(2, 1fr)' gap={"10"}>
                     <GridItem>
                     <img src={b1} alt="drafts" />
-                    <h3> <b> Draft posts </b></h3>
-                    <p>Create drafts, get feedback, and refine  <br /> content as a team</p>
+                    <h3 className='ih3'> <b> Draft posts </b></h3>
+                    <p className='ip'>Create drafts, get feedback, and refine  <br /> content as a team</p>
                     </GridItem>
                     <GridItem>
                     <img src={b2} alt="approvals" />
-                    <h3><b>Approvals</b></h3>
-                    <p>Review posts for quality and brand <br /> before hitting publish</p>
+                    <h3 className='ih3'><b>Approvals</b></h3>
+                    <p className='ip'>Review posts for quality and brand <br /> before hitting publish</p>
 
                     </GridItem>
                     <GridItem>
                     <img src={b3} alt="sync" />
-                    <h3><b> Stay in sync</b> </h3>
-                    <p>Everyone's posts will be shared within <br /> your preset schedule</p>
+                    <h3 className='ih3'><b> Stay in sync</b> </h3>
+                    <p className='ip'>Everyone's posts will be shared within <br /> your preset schedule</p>
 
                     </GridItem>
                     <GridItem>
                     <img src={b4} alt="security" />
-                    <h3> <b>Account management</b></h3>
-                    <p>Easily share and manage access to <br /> each social account</p>
+                    <h3 className='ih3'> <b>Account management</b></h3>
+                    <p className='ip'>Easily share and manage access to <br /> each social account</p>
 
                     </GridItem>
                 </Grid>

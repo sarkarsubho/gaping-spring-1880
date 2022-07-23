@@ -12,8 +12,11 @@ import Signup from "./Signup"
 import { Center } from "@chakra-ui/react";
 import AnalyzePage from "./AnalyzePage";
 import PublishPage from "./PublishPage";
+import AboutUs from "./AboutUs";
+import Customer from "./Customer"
 
 const MainRoutes = () => {
+
   return <div>
     <Routes>
 
@@ -26,6 +29,8 @@ const MainRoutes = () => {
         <Route path="/engagepage" element={<EngagementPage />} />
         <Route path="/publish" element={<PublishPage/>}/>
     <Route path="/analyze" element={<AnalyzePage/>}/>
+    <Route path="/AboutUs" element={<AboutUs />} />
+      <Route path="/Customer" element={<Customer />} />
 
     </Routes>
   </div>;

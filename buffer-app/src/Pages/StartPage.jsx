@@ -4,6 +4,7 @@ import Accordionn659 from '../Components/startPage/Accordionn659'
 import CardNav659 from '../Components/startPage/CardNav659'
 import { Carousel659 } from '../Components/startPage/Carousel659'
 import Melisa659 from '../Components/startPage/Melisa659'
+import { RoundCarousel659 } from '../Components/startPage/RoundCarousel659'
 import StartPageIntro659 from '../Components/startPage/StartPageIntro659'
 import ThreeCards659 from '../Components/startPage/ThreeCards659'
 
@@ -17,6 +18,7 @@ const StartPage = () => {
       <CardNav659 />
       <Melisa659 />
       <ThreeCards659 />
+      <RoundCarousel659 />
       <Center>
         <Accordionn659 />
       </Center>

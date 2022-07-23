@@ -5,12 +5,12 @@ const StartPageIntro659 = () => {
   return (
     
       <Flex
-        width={["100%", "100%", "45%", "45%"]}
+        width={["90%", "90%", "45%", "45%"]}
         alignItems="center"
         gap="40px"
         direction="column"
       >
-        <Heading size="xl" fontWeight="extrabold" letterSpacing="2px">
+        <Heading size="xl" fontWeight="extrabold" letterSpacing={["0px","0px","1px","2px"]}>
           The link in bio that drives more traffic to your content for free
         </Heading>
         <Text>
@@ -21,7 +21,7 @@ const StartPageIntro659 = () => {
         <Button
           bgColor="blue.400"
           padding="40px"
-          width={["100%", "100%", "50%", "50%"]}
+          width={["90%", "90%", "50%", "50%"]}
         >
           Create your Start Page for free
         </Button>

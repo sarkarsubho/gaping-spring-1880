@@ -9,80 +9,81 @@ const CardNav659 = () => {
     const [card, setcard] = useState("small");
 
   return (
-    <Box>
-      <Button
-        onClick={() => {
-          setcard("small");
-        }}
-        bgColor="white"
-        _hover={"white"}
-      >
-
-        Small business
-      </Button>
-      <Button
-        onClick={() => {
-          setcard("coach");
-        }}
-        bgColor="white"
-        _hover={"white"}
-      >
-        Coach
-      </Button>
-      <Button
-        onClick={() => {
-          setcard("music");
-        }}
-        bgColor="white"
-        _hover={"white"}
-      >
-        Music
-      </Button>
-      <Button
-        onClick={() => {
-          setcard("photo");
-        }}
-        bgColor="white"
-        _hover={"white"}
-      >
-        Photograph
-      </Button>
-      <Button
-        onClick={() => {
-          setcard("wedding");
-        }}
-        bgColor="white"
-        _hover={"white"}
-      >
-        Wedding
-      </Button>
-      <Button
-        onClick={() => {
-          setcard("nft");
-        }}
-        bgColor="white"
-        _hover={"white"}
-      >
-        NFT
-      </Button>
-      <Button
-        onClick={() => {
-          setcard("pet");
-        }}
-        bgColor="white"
-        _hover={"white"}
-      >
-        Pet
-      </Button>
-      <Button
-        onClick={() => {
-          setcard("links");
-        }}
-        bgColor="white"
-        _hover={"white"}
-      >
-        Links
-      </Button>
+    <Box >
+      <Box bgColor="whitesmoke" paddingTop="60px" >
+        <Button
+          onClick={() => {
+            setcard("small");
+          }}
+          bgColor="white"
+          _hover={"white"}
+        >
+          Small business
+        </Button>
+        <Button
+          onClick={() => {
+            setcard("coach");
+          }}
+          bgColor="white"
+          _hover={"white"}
+        >
+          Coach
+        </Button>
+        <Button
+          onClick={() => {
+            setcard("music");
+          }}
+          bgColor="white"
+          _hover={"white"}
+        >
+          Music
+        </Button>
+        <Button
+          onClick={() => {
+            setcard("photo");
+          }}
+          bgColor="white"
+          _hover={"white"}
+        >
+          Photograph
+        </Button>
+        <Button
+          onClick={() => {
+            setcard("wedding");
+          }}
+          bgColor="white"
+          _hover={"white"}
+        >
+          Wedding
+        </Button>
+        <Button
+          onClick={() => {
+            setcard("nft");
+          }}
+          bgColor="white"
+          _hover={"white"}
+        >
+          NFT
+        </Button>
+        <Button
+          onClick={() => {
+            setcard("pet");
+          }}
+          bgColor="white"
+          _hover={"white"}
+        >
+          Pet
+        </Button>
+        <Button
+          onClick={() => {
+            setcard("links");
+          }}
+          bgColor="white"
+          _hover={"white"}
+        >
+          Links
+        </Button>
+      </Box>
       <Box transition="ease-in-out">
         {card == "small" && (
           <Card659

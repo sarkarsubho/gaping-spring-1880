@@ -3,10 +3,6 @@ import {
   Heading,
   Avatar,
   Box,
-  Flex,
-  Text,
-  Stack,
-  useColorModeValue,
   Container,
   Image
 } from "@chakra-ui/react";
@@ -18,6 +14,7 @@ export const Carousel659 = () => {
       maxWidth={["500px", "800px", "1000px", "1200px", "1500px", "1500px"]}
       mt="60px"
       padding="0"
+      bgColor="whitesmoke"
     >
       <div className={styles.slider}>
         <div className={styles.slidertrack}>

@@ -3,22 +3,32 @@ import React from 'react'
 
 const Card659 = ({head,txt,imglink}) => {
   return (
-    <Flex justifyContent="space-evenly" mt="60px" alignItems="center" >
-      <Flex direction="column" align="flex-start" gap="40px" width="40%">
-          <Heading fontWeight="extrabold" align="start">
-           {head}
-          </Heading>
-          <Text align="start">
-           {txt}
-          </Text>
-          <Button bgColor="blue.300" padding="30px">
-           Create your Start Page for free
-          </Button>
+    <Flex
+      justifyContent="space-evenly"
+      mt="60px"
+      alignItems="center"
+      direction={["column", "column", "row", "row"]}
+    >
+      <Flex
+        direction="column"
+        align={["center", "center", "start", "start"]}
+        gap="40px"
+        width={["90%", "90%", "40%", "40%"]}
+      >
+        <Heading
+          fontWeight="extrabold"
+          align={["center", "center", "start", "start"]}
+        >
+          {head}
+        </Heading>
+        <Text align={["center", "center", "start", "start"]}>{txt}</Text>
+        <Button bgColor="blue.300" padding="30px">
+          Create your Start Page for free
+        </Button>
       </Flex>
-      <Image src={imglink} width="41%" >
-      </Image>
+      <Image src={imglink} width={["100%", "100%", "41%", "41%"]}></Image>
     </Flex>
-  )
+  );
 }
 
 export default Card659

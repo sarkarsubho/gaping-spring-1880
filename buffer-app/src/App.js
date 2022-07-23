@@ -1,12 +1,12 @@
-import logo from "./logo.svg";
+
 import "./App.css";
-import { Container } from "@chakra-ui/react";
-import EngagementPage from "./Pages/EngagementPage";
+
+import StartPage from "./Pages/StartPage";
 
 function App() {
   return (
     <div className="App">
-      <EngagementPage />
+    <StartPage />
     </div>
   );
 }

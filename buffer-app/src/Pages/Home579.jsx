@@ -107,7 +107,7 @@ export const Home579 = () => {
       </Flex>
       <BlueBox659></BlueBox659>
 
-      <Footer></Footer>
+      
     </div>
   );
 };

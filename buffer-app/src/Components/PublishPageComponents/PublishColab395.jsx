@@ -23,28 +23,28 @@ const PublishColab395 = () => {
                 <Heading fontSize={"24px"} mt={"20px"}fontWeight={'light'}>
                 Work together with your team to create <br /> content that's high quality, on-brand, and that <br />your audience is going to love.
                 </Heading>
-                <Grid templateColumns='repeat(2, 1fr)' gap={"10px"}>
+                <Grid templateColumns='repeat(2, 1fr)' gap={"10"}>
                     <GridItem>
                     <img src={draftlogo} alt="drafts" />
-                    <h3> <b> Direct scheduling </b></h3>
-                    <p>Autopublish your posts, carousels, and <br /> Reels directly to Instagram</p>
+                    <h3> <b> Draft posts </b></h3>
+                    <p>Create drafts, get feedback, and refine  <br /> content as a team</p>
                     </GridItem>
                     <GridItem>
                     <img src={approval} alt="approvals" />
-                    <h3><b>First comment</b></h3>
-                    <p>Include a first comment when you <br /> schedule Instagram posts</p>
+                    <h3><b>Approvals</b></h3>
+                    <p>Review posts for quality and brand <br /> before hitting publish</p>
 
                     </GridItem>
                     <GridItem>
                     <img src={synclogo} alt="sync" />
-                    <h3><b> Shop grid</b> </h3>
-                    <p>Drive traffic and sales to your shop <br /> from your Instagram bio</p>
+                    <h3><b> Stay in sync</b> </h3>
+                    <p>Everyone's posts will be shared within <br /> your preset schedule</p>
 
                     </GridItem>
                     <GridItem>
                     <img src={account} alt="security" />
-                    <h3> <b>Reminders</b></h3>
-                    <p>Plan posts in advance and get <br /> notifications to post natively</p>
+                    <h3> <b>Account management</b></h3>
+                    <p>Easily share and manage access to <br /> each social account</p>
 
                     </GridItem>
                 </Grid>

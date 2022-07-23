@@ -89,79 +89,90 @@ export const Dr = ({ display }) => {
                 </Button>
                 {ToolsView && (
                   <Flex direction={"column"}>
-                    <Button
-                      as="a"
-                      variant="ghost"
-                      colorScheme={"white"}
-                      area-label="Tools"
-                      my={3}
-                      w="100%"
-                      fontSize={"20px"}
-                      fontWeight={"bold"}
-                      onClick={onClose}
-                    >
-                      publish
-                    </Button>
+                    <Link to={"/publish"}>
+                      <Button
+                        as="a"
+                        variant="ghost"
+                        colorScheme={"white"}
+                        area-label="Tools"
+                        my={3}
+                        w="100%"
+                        fontSize={"20px"}
+                        fontWeight={"bold"}
+                        onClick={onClose}
+                      >
+                        publish
+                      </Button>
+                    </Link>
 
-                    <Button
-                      as="a"
-                      variant="ghost"
-                      colorScheme={"white"}
-                      area-label="Tools"
-                      my={3}
-                      w="100%"
-                      fontSize={"20px"}
-                      fontWeight={"bold"}
-                      onClick={onClose}
-                    >
-                      AnaLize
-                    </Button>
-                    <Button
-                      as="a"
-                      variant="ghost"
-                      colorScheme={"white"}
-                      area-label="Tools"
-                      my={3}
-                      w="100%"
-                      fontSize={"20px"}
-                      fontWeight={"bold"}
-                      onClick={onClose}
-                    >
-                      Engage
-                    </Button>
-                    <Button
-                      as="a"
-                      variant="ghost"
-                      colorScheme={"white"}
-                      area-label="Tools"
-                      my={3}
-                      w="100%"
-                      fontSize={"20px"}
-                      fontWeight={"bold"}
-                      onClick={onClose}
-                    >
-                      Start Page
-                    </Button>
+                    <Link to={"/analyze"}>
+                      <Button
+                        as="a"
+                        variant="ghost"
+                        colorScheme={"white"}
+                        area-label="Tools"
+                        my={3}
+                        w="100%"
+                        fontSize={"20px"}
+                        fontWeight={"bold"}
+                        onClick={onClose}
+                      >
+                        AnaLize
+                      </Button>
+                    </Link>
+                    <Link to={"/engagepage"}>
+                      <Button
+                        as="a"
+                        variant="ghost"
+                        colorScheme={"white"}
+                        area-label="Tools"
+                        my={3}
+                        w="100%"
+                        fontSize={"20px"}
+                        fontWeight={"bold"}
+                        onClick={onClose}
+                      >
+                        Engage
+                      </Button>
+                    </Link>
+                    <Link to={"/startpage"}>
+                      <Button
+                        as="a"
+                        variant="ghost"
+                        colorScheme={"white"}
+                        area-label="Tools"
+                        my={3}
+                        w="100%"
+                        fontSize={"20px"}
+                        fontWeight={"bold"}
+                        onClick={onClose}
+                      >
+                        Start Page
+                      </Button>
+                    </Link>
+
                     <Divider />
                   </Flex>
                 )}
               </LinkBox>
               <LinkBox>
-                <Button
-                  as="a"
-                  variant="ghost"
-                  colorScheme={"white"}
-                  area-label="Tools"
-                  my={5}
-                  w="100%"
-                  fontSize={"27px"}
-                  fontWeight={"bold"}
-                  onClick={onClose}
-                >
-                  Pricing
-                </Button>
+                <Link to={"/pricing"}>
+                  <Button
+                    as="a"
+                    variant="ghost"
+                    colorScheme={"white"}
+                    area-label="Tools"
+                    my={5}
+                    w="100%"
+                    fontSize={"27px"}
+                    fontWeight={"bold"}
+                    onClick={onClose}
+                  >
+                    Pricing
+                  </Button>
+                </Link>
               </LinkBox>
-              <LinkBox>
+              {/* <LinkBox>
                 <Button
                   as="a"
                   variant="ghost"
@@ -175,7 +186,7 @@ export const Dr = ({ display }) => {
                 >
                   Blog
                 </Button>
-              </LinkBox>
+              </LinkBox> */}
               <LinkBox>
                 <Button
                   as="a"

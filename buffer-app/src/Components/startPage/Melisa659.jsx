@@ -1,5 +1,6 @@
 import { Button, Flex, Heading,Text,Image,Box } from '@chakra-ui/react'
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Melisa659 = () => {
   return (
@@ -23,9 +24,10 @@ const Melisa659 = () => {
           or create from scratch, make your page pop with powerful customization
           options.
         </Text>
-        <Button bgColor="blue.300" color="white" padding="30px">
+        <Link to="/signup">
+        <Button bgColor="blue.400" color="white" padding="30px">
           Create your Start Page for free
-        </Button>
+        </Button></Link>
       </Flex>
     </Flex>
   );

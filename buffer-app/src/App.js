@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <Container maxW={["100%", "100%", "100%", "85%"]} >
         <Navbar></Navbar>
-        <MainRoutes></MainRoutes>
-        {/* <Pricing579></Pricing579> */}
+        {/* <MainRoutes></MainRoutes> */}
+        <Pricing579></Pricing579>
       </Container>
     </div>
   );

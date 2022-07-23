@@ -11,8 +11,9 @@ import {
   Button,
   Image,
   Container,
+  border,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaLinkedin, FaTiktok } from "react-icons/fa";
 import { IoLogoPinterest } from "react-icons/io5";
@@ -25,18 +26,27 @@ import PricingBG from "../data/PricingBG.png";
 import PriceTag from "./PricingComponents579/priceTag";
 import BlueBox659 from "../Components/BlueBox659";
 import { Footer } from "../Components/Footer";
+import PricingBlock579 from "./PricingComponents579/PricingBlock579";
 
 export const Pricing579 = () => {
+  const [substype, setsubstype] = useState("year");
+
+  const changeSubscription = (val) => {
+    setsubstype(val);
+  };
   return (
     <div>
-      <Center>
-        <Flex direction={"column"} >
-          <Heading as="h2" size="2xl">
-            Publish Flawlessly.
-          </Heading>
-          <Heading as="h2" size="2xl">
-            Analyze Effortlessly. Engage Authentically.
-          </Heading>
+      <Center mt={"8rem"}>
+        <Flex direction={"column"}>
+          <Box fontSize={["xx-small", "md", "lg", "4xl"]} mb={"2rem"}>
+            <Heading as="h2" size="2xl">
+              Publish Flawlessly.
+            </Heading>
+            <Heading as="h2" size="2xl">
+              Analyze Effortlessly. Engage Authentically.
+            </Heading>
+          </Box>
+
           <Text>
             We've built simpler social media tools for busy people. Enjoy our
             free plan as you get started, or trial our full toolkit priced to
@@ -55,16 +65,27 @@ export const Pricing579 = () => {
               variant="outline"
               rounded={"0px"}
               px={6}
+              style={{
+                border: `${
+                  substype === "month" ? "2px solid blue" : "1px solid blue"
+                }`,
+              }}
+              onClick={() => changeSubscription("month")}
             >
-              Get Started
+              Monthly
             </Button>
             <Button
               variant={"outline"}
               colorScheme={"blue"}
               rounded={"0px"}
-              _selected={{ border: "2px solid red" }}
+              style={{
+                border: `${
+                  substype === "year" ? "2px solid blue" : "1px solid blue"
+                }`,
+              }}
+              onClick={() => changeSubscription("year")}
             >
-              Learn more
+              Yearly
             </Button>
             <Box>
               <Icon
@@ -105,19 +126,38 @@ export const Pricing579 = () => {
         </Flex>
       </Center>
 
-      <Flex direction={"row"} alignItems="center" justifyContent={"center"}>
+      <Box margin={"50px 0"}>
+        <Box
+          maxW={"100%"}
+          h={["2100px", "2100px", "1200px", "1200px", "400px"]}
+          // border={"2px solid green"}
+          position="absolute"
+          bgImg={PricingBG}
+          zIndex={-1}
+          mt={"8rem"}
+          bgSize="cover"
+        >
+          <Image src={PricingBG}></Image>
+        </Box>
+        <PriceTag substype={substype}></PriceTag>
+      </Box>
+
+      <Flex
+        direction={"row"}
+        alignItems="center"
+        justifyContent={"center"}
+        margin={"4rem"}
+      >
         <Image src={Meta}></Image>
         <Image src={Partners}></Image>
         <Image src={MarketingPartner}></Image>
       </Flex>
-
-      <Container maxW={"100%"} maxH={"fit-content"} border={"2px solid green"} position="relative" bgImg={PricingBG} zIndex={0} mt={"4rem"} >
-
-      
-         <PriceTag></PriceTag>
-      </Container> 
-     
-
+      <Center>
+        <Heading as="h2" size="xl">
+          Compare our plans side-by-side
+        </Heading>
+      </Center>
+      <PricingBlock579></PricingBlock579>
       <BlueBox659></BlueBox659>
       <Footer></Footer>
     </div>

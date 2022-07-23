@@ -30,28 +30,28 @@ const Values = () => {
               <h2>
                 <AccordionButton>
                   <Box flex="1" textAlign="left" className={styles.bx}>
-                    1  Default to transparency
+                    1 Default to transparency
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                <li>
+                <li className={styles.lii}>
                   As individuals, we view transparency as a lifestyle of
                   authenticity and honesty.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   As a team, we view transparency as an effective way to work
                   remotely and establish a culture of trust.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   s a company, we view transparency as a tool to help others.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   A We share early in the decision process to avoid “big
                   revelations.”
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We strive to make all communication clear and avoid making
                   assumptions.
                 </li>
@@ -62,28 +62,28 @@ const Values = () => {
               <h2>
                 <AccordionButton>
                   <Box flex="1" textAlign="left" className={styles.bx}>
-                    2  Cultivate positivity
+                    2 Cultivate positivity
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                <li>
+                <li className={styles.lii}>
                   We strive to approach things in a positive way while realizing
                   all emotions are valid.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We avoid non-constructive criticism of team members or
                   customers.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We assume the best of others because we may lack full context.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We believe that constructive, honest feedback is an
                   opportunity for growth.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We push through any artificial harmony to work towards a
                   better environment, product or concept.
                 </li>
@@ -94,30 +94,30 @@ const Values = () => {
               <h2>
                 <AccordionButton>
                   <Box flex="1" textAlign="left" className={styles.bx}>
-                    3  Show gratitude
+                    3 Show gratitude
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                <li>
+                <li className={styles.lii}>
                   We regularly stop and demonstrate gratitude for our
                   circumstances.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We are thankful for our customers and approach customer
                   conversations with the knowledge that it’s a privilege to
                   serve them.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We practice humility, operate as no-ego doers and do not
                   attach our personal selves to ideas.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We are grateful for the work teammates do to push the company
                   forward.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We display gratitude for the platforms, tools and open source
                   code and communities that make our company possible and view
                   it as our duty to give back.
@@ -129,29 +129,29 @@ const Values = () => {
               <h2>
                 <AccordionButton>
                   <Box flex="1" textAlign="left" className={styles.bx}>
-                    4  Practice reflection
+                    4 Practice reflection
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                <li>
+                <li className={styles.lii}>
                   We believe the act of introspection is where true learning and
                   life-changing adjustments originate..
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We approach discussions intentionally and think through all
                   angles.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We listen first and then listen more: seeking first to
                   understand, then to be understood.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We are grateful for the work teammates do to push the company
                   forward.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We take the approach that everything is a hypothesis and we
                   could be wrong.
                 </li>
@@ -162,28 +162,28 @@ const Values = () => {
               <h2>
                 <AccordionButton className={styles.bx}>
                   <Box flex="1" textAlign="left" className={styles.bx}>
-                    5  Improve consistently
+                    5 Improve consistently
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                <li>
+                <li className={styles.lii}>
                   We are biased toward action and have a higher expectation of
                   ourselves and of our product than others have of us.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We aim to be fully engaged in our work and activities, and
                   fully disconnected when we’re not working.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We choose to be where we are the happiest and most productive.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We desire to be better tomorrow than today, knowing that
                   improvement can be found in small changes.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We strive to exemplify a growth mindset and believe that any
                   skill or talent can be learned through deliberate practice.
                 </li>
@@ -194,29 +194,29 @@ const Values = () => {
               <h2>
                 <AccordionButton className={styles.bx}>
                   <Box flex="1" textAlign="left" className={styles.bx}>
-                    6  Act beyond yourself
+                    6 Act beyond yourself
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                <li>
+                <li className={styles.lii}>
                   We consider the bigger picture, knowing our work goes beyond
                   ourselves.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We are not afraid of the less-traveled path if it holds true
                   to our values and betters the world.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We seek balance by taking into account multiple perspectives
                   and listening deeply.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We desire to be better tomorrow than today, knowing that
                   improvement can be found in small changes.
                 </li>
-                <li>
+                <li className={styles.lii}>
                   We work to create an inclusive environment to build a better
                   company and set a positive example for the world.
                 </li>
@@ -239,10 +239,11 @@ const Values = () => {
         </div>
         <section className={styles.csOpnL}>
           <div className={styles.iXhtha}>
-            <a href="">
+            <a href="" className={styles.aa}>
               <div>
                 <div className={styles.lcZnln}>
-                  <svg
+                  <svg 
+                    className={styles.ssv}
                     width="100%"
                     height="100%"
                     viewBox="0 0 61 60"
@@ -296,10 +297,11 @@ const Values = () => {
             </a>
           </div>
           <div className={styles.iXhtha}>
-            <a href="">
+            <a href="" className={styles.aa}>
               <div>
                 <div className={styles.lcZnln}>
                   <svg
+                    className={styles.ssv}
                     width="100%"
                     height="100%"
                     viewBox="0 0 60 60"
@@ -335,10 +337,11 @@ const Values = () => {
             </a>
           </div>
           <div className={styles.iXhtha}>
-            <a href="">
+            <a href="" className={styles.aa}>
               <div>
                 <div className={styles.lcZnln}>
                   <svg
+                    className={styles.ssv}
                     width="100%"
                     height="100%"
                     viewBox="0 0 60 61"
@@ -374,10 +377,11 @@ const Values = () => {
             </a>
           </div>
           <div className={styles.iXhtha}>
-            <a href="">
+            <a href="" className={styles.aa}>
               <div>
                 <div className={styles.lcZnln}>
                   <svg
+                    className={styles.ssv}
                     width="100%"
                     height="100%"
                     viewBox="0 0 60 61"

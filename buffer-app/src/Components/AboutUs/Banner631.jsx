@@ -8,7 +8,7 @@ const Banner631 = () => {
       <div className={styles.pnk}>
         <h1 className={styles.ab}>About us</h1>
         <div className={styles.imdiv}>
-          <img
+          <img 
             className={styles.im}
             src="https://static.buffer.com/cdn-cgi/image/w=750,qual…auto/marketing/static/team/buffer-group-photo.jpg"
             alt=""
@@ -87,10 +87,13 @@ const Banner631 = () => {
 
       <section className={styles.lkHCMN}>
         <div className={styles.hWAzQZ}>
-          <h2 className={styles.brnd}>A few of the amazing brands who trust Buffer</h2>
+          <h2 className={styles.brnd}>
+            A few of the amazing brands who trust Buffer
+          </h2>
           <div className={styles.cpUkiG}>
             <div>
               <svg
+                className={styles.sg}
                 viewBox="0 0 98 16"
                 width="100%"
                 height="100%"
@@ -108,6 +111,7 @@ const Banner631 = () => {
             </div>
             <div>
               <svg
+                className={styles.sg}
                 xmlns="http://www.w3.org/2000/svg"
                 width="100%"
                 height="24px"
@@ -122,6 +126,7 @@ const Banner631 = () => {
             </div>
             <div>
               <svg
+                className={styles.sg}
                 viewBox="0 0 108 23"
                 width="100%"
                 height="32px"
@@ -146,6 +151,7 @@ const Banner631 = () => {
             </div>
             <div>
               <svg
+                className={styles.sg}
                 viewBox="0 0 125 20"
                 width="100%"
                 height="100%"
@@ -162,6 +168,7 @@ const Banner631 = () => {
             </div>
             <div>
               <svg
+                className={styles.sg}
                 width="100%"
                 height="100%"
                 viewBox="0 0 152 44"
@@ -212,6 +219,7 @@ const Banner631 = () => {
             </div>
             <div>
               <svg
+                className={styles.sg}
                 width="100%"
                 height="100%"
                 viewBox="0 0 100 43"
@@ -230,6 +238,7 @@ const Banner631 = () => {
             </div>
             <div>
               <svg
+                className={styles.sg}
                 width="100%"
                 height="30px"
                 viewBox="0 0 115 32"
@@ -248,6 +257,7 @@ const Banner631 = () => {
             </div>
             <div>
               <svg
+                className={styles.sg}
                 width="100%"
                 height="100%"
                 viewBox="0 0 157 35"
@@ -277,6 +287,7 @@ const Banner631 = () => {
             </div>
             <div>
               <svg
+                className={styles.sg}
                 viewBox="0 0 140 32"
                 width="100%"
                 height="100%"
@@ -293,6 +304,7 @@ const Banner631 = () => {
             </div>
             <div>
               <svg
+                className={styles.sg}
                 width="100%"
                 height="100%"
                 viewBox="0 0 122 36"
@@ -330,6 +342,7 @@ const Banner631 = () => {
             </div>
             <div>
               <svg
+                className={styles.sg}
                 classNameName="logo-svg u-mrg-0"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 842 168"
@@ -348,6 +361,7 @@ const Banner631 = () => {
             </div>
             <div>
               <svg
+                className={styles.sg}
                 width="100%"
                 height="100%"
                 viewBox="0 0 149 37"
@@ -370,6 +384,7 @@ const Banner631 = () => {
             </div>
             <div>
               <svg
+                className={styles.sg}
                 width="100%"
                 height="55px"
                 viewBox="0 0 91 60"
@@ -396,6 +411,7 @@ const Banner631 = () => {
             </div>
             <div>
               <svg
+                className={styles.sg}
                 width="100%"
                 height="100%"
                 viewBox="0 0 130 41"
@@ -414,6 +430,7 @@ const Banner631 = () => {
             </div>
             <div>
               <svg
+                className={styles.sg}
                 width="100%"
                 height="45px"
                 viewBox="0 0 112 59"
@@ -433,6 +450,7 @@ const Banner631 = () => {
             </div>
             <div>
               <svg
+                className={styles.sg}
                 width="100%"
                 height="100%"
                 viewBox="0 0 189 29"

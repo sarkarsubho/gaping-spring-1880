@@ -34,6 +34,7 @@ const MainRoutes = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/startpage" element={<StartPage />} />
         <Route path="/engagepage" element={<EngagementPage />} />
+
         <Route path="/publish" element={<PublishPage />} />
         <Route path="/analyze" element={<AnalyzePage />} />
         <Route path="/AboutUs" element={<AboutUs />} />
@@ -41,6 +42,9 @@ const MainRoutes = () => {
       </Routes>
     </div>
   );
+   
+
+    
 };
 
 export default MainRoutes;

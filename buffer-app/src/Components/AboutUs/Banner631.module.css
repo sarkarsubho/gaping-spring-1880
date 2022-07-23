@@ -63,7 +63,7 @@
     grid-gap: 50px;
     margin-top: 50px;
 }
-svg {
+.sg {
     width: 100%;
     height: 100%;
 }
@@ -75,7 +75,7 @@ svg {
     padding-top: 70px;
 }
 
-section {
+.lkHCMN {
     display: block;
 }
 
@@ -132,7 +132,7 @@ section {
     margin-top: 40px;
 }
 
-img {
+.im {
     width: 100%;
     height: 100%;
 }

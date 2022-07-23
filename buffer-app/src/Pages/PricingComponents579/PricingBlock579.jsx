@@ -1,12 +1,15 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import styles from "./Pricetag.module.css"
+import { Tablecomponent } from "./Tablecomponent";
+import {data} from "../../data/Tabledata579"
 
 const PricingBlock579 = () => {
+  console.log(data);
   return (
     <div>
-      <Flex justifyContent={"center"} mt={"2rem"}>
-        <Box display={"flex"} flexDirection={"column"} padding={"30px"} className={styles.shado}>
+      <Flex justifyContent={"center"} mt={"2rem"}className={styles.shado} gap="23px" maxW={"fit-content"} align="center" margin={"30px auto"} display={["view","view","none","none"]}>
+        <Box display={"flex"} flexDirection={"column"} padding={"30px"} borderRight={"1px solid gray"}>
           <Heading as="h2" size="md">
             Free
           </Heading>
@@ -14,7 +17,7 @@ const PricingBlock579 = () => {
           $0 per channel
           </Text>
         </Box>
-        <Box display={"flex"} flexDirection={"column"} padding={"30px"} className={styles.shado}>
+        <Box display={"flex"} flexDirection={"column"} padding={"30px"} borderRight={"1px solid gray"}>
           <Heading as="h2" size="md">
           Essentials
           </Heading>
@@ -22,7 +25,7 @@ const PricingBlock579 = () => {
           $5/mo per channel
           </Text>
         </Box>
-        <Box display={"flex"} flexDirection={"column"} padding={"30px"} className={styles.shado}>
+        <Box display={"flex"} flexDirection={"column"} padding={"30px"} borderRight={"1px solid #A5C9CA"}>
           <Heading as="h2" size="md">
           Team
           </Heading>
@@ -30,7 +33,7 @@ const PricingBlock579 = () => {
           $10/mo per channel
           </Text>
         </Box>
-        <Box display={"flex"} flexDirection={"column"} padding={"30px"} className={styles.shado}> 
+        <Box display={"flex"} flexDirection={"column"} padding={"30px"}> 
           <Heading as="h2" size="md">
           Agency
           </Heading>
@@ -39,6 +42,11 @@ const PricingBlock579 = () => {
           </Text>
         </Box>
       </Flex>
+
+      {
+        data.map((tab,index)=>{return <Tablecomponent key={index} data={tab} index={index}></Tablecomponent>})
+      }
+      
     </div>
   );
 };

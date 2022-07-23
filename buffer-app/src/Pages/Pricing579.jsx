@@ -158,6 +158,7 @@ export const Pricing579 = () => {
         </Heading>
       </Center>
       <PricingBlock579></PricingBlock579>
+      
       <BlueBox659></BlueBox659>
       <Footer></Footer>
     </div>

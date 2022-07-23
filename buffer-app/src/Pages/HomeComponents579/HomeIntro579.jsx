@@ -19,6 +19,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import intro from "../../data/Bufferintro.mp4";
+import { Link } from "react-router-dom";
 
 export default function HomeIntro579() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -38,7 +39,8 @@ export default function HomeIntro579() {
             tools for ambitious people and teams.
           </Text>
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-            <Button
+          <Link to="/signup">
+ <Button
               rounded={"5px"}
               bg={"#2C4BFF"}
               color={"white"}
@@ -49,6 +51,8 @@ export default function HomeIntro579() {
             >
               Get started now
             </Button>
+          </Link>
+           
             <Button
               fontSize="18px"
               leftIcon={<BsPlayCircle fontSize="25px"></BsPlayCircle>}

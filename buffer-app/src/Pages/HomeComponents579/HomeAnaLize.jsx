@@ -7,6 +7,7 @@ import {
     Text,
    
   } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
  
   
   export default function HomeAnaLize() {
@@ -47,6 +48,7 @@ import {
             See what’s working and deliver high engagement content.
             </Text>
             <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+            <Link to="/signup">
               <Button
                 rounded={'5px'}
                 bg={'#2C4BFF'}
@@ -56,7 +58,11 @@ import {
                 }} fontSize="18px">
                 Get started now
               </Button>
-              <Button fontSize="18px"  rounded={'5px'} colorScheme="blue" variant={"outline"}>Learn More</Button>
+            </Link>
+              <Link to="/analyze">
+                  <Button fontSize="18px"  rounded={'5px'} colorScheme="blue" variant={"outline"}>Learn More</Button>
+              </Link>
+            
             </Stack>
           </Stack>
         </Flex>

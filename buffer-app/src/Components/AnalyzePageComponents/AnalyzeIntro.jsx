@@ -2,6 +2,7 @@ import React from 'react'
 import {Box, Button, Container, Heading, Text} from '@chakra-ui/react';
 import { Flex, Spacer } from '@chakra-ui/react';
 import vid from "../data/hero-buffer-analyze-animation.mp4";
+import { Link } from 'react-router-dom';
 
 const AnalyzeIntro = () => {
   return (
@@ -20,7 +21,10 @@ const AnalyzeIntro = () => {
             </Text>
         </Box>
         <Spacer />
-        <Button colorScheme={"blue"} h={"80px"} w={"240px"} fontSize={"18px"}>Get Started Now</Button>
+        <Link to="/signup">
+           <Button colorScheme={"blue"} h={"80px"} w={"240px"} fontSize={"18px"}>Get Started Now</Button>
+        </Link>
+       
         </Flex>
         </Container>
         <Container>

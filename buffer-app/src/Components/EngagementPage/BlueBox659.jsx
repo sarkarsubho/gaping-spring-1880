@@ -5,6 +5,7 @@ import blue from "../data/IMG_1645.jpg";
 
 const BlueBox659 = () => {
   return (
+    
     <Flex direction="column" align="center" mt="8rem">
       <Image src={blue} alt="" position="relative" />
       <Heading

@@ -8,8 +8,8 @@ import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 export const Footer = () => {
   return (
-    <Flex justifyContent={"space-between"} direction={["column","column","row","row"]} gap={"50px"}>
-      <Box margin={["auto","auto","0","0"]}>
+    <Flex justifyContent={"space-evenly"} direction={["column","column","row","row"]} gap={"50px"} mt="150px" bgColor="whitesmoke" paddingTop="120px" paddingBottom="80px" >
+      <Box margin={["auto","auto","0","0"]} >
         <Heading as="h2" size="2xl" textAlign={[ "center","center","left","left"]} marginBottom={"30px"}>
           Buffer
         </Heading>

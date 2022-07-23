@@ -15,7 +15,7 @@ import styles from "./Style.module.css";
 export default function HomeCelbCarosel() {
   return (
     <Container
-      maxWidth={["500px", "800px", "1000px", "1200px", "1500px", "1500px"]}
+      maxWidth={["500px", "800px", "1000px", "1200px", "1500px", "2100px"]}
       mt="60px"
       padding="0"
     >

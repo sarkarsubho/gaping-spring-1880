@@ -188,34 +188,38 @@ export const Dr = ({ display }) => {
                 </Button>
               </LinkBox> */}
               <LinkBox>
-                <Button
-                  as="a"
-                  variant="ghost"
-                  colorScheme={"white"}
-                  area-label="Tools"
-                  my={5}
-                  w="100%"
-                  fontSize={"27px"}
-                  fontWeight={"bold"}
-                  onClick={onClose}
-                >
-                  About
-                </Button>
+                <Link to="/AboutUs">
+                  <Button
+                    as="a"
+                    variant="ghost"
+                    colorScheme={"white"}
+                    area-label="Tools"
+                    my={5}
+                    w="100%"
+                    fontSize={"27px"}
+                    fontWeight={"bold"}
+                    onClick={onClose}
+                  >
+                    About
+                  </Button>
+                </Link>
               </LinkBox>
               <LinkBox>
-                <Button
-                  as="a"
-                  variant="ghost"
-                  colorScheme={"white"}
-                  area-label="Tools"
-                  my={5}
-                  w="100%"
-                  fontSize={"27px"}
-                  fontWeight={"bold"}
-                  onClick={onClose}
-                >
-                  Customer
-                </Button>
+                <Link to="/Customer">
+                  <Button
+                    as="a"
+                    variant="ghost"
+                    colorScheme={"white"}
+                    area-label="Tools"
+                    my={5}
+                    w="100%"
+                    fontSize={"27px"}
+                    fontWeight={"bold"}
+                    onClick={onClose}
+                  >
+                    Customer
+                  </Button>
+                </Link>
               </LinkBox>
               <LinkBox>
                 <Link to="/signup">

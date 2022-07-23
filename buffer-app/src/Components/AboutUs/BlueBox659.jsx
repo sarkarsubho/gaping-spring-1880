@@ -1,10 +1,11 @@
 import { Box, Flex, Heading,Button,Image, Center  } from '@chakra-ui/react'
 import React from 'react'
+import { Link } from 'react-router-dom';
 import blue from "./IMG_1645.jpg";
 
 const BlueBox659 = () => {
   return (
-     
+    <Link to="/signup">
     <Flex direction="column" align="center" mt="8rem">
       <Image src={blue} alt="" position="relative" />
       <Heading width="44%" position="absolute" mt={["2rem","2rem","5rem","5rem"]} color="white" fontSize={["xx-small","md","xl","4xl"]} >
@@ -17,7 +18,7 @@ const BlueBox659 = () => {
         Get started now
       </Button>
     </Flex>
-   
+   </Link>
   );
 }
 

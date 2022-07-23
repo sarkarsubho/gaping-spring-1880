@@ -71,54 +71,59 @@ export const Navbar = () => {
               </MenuButton>
               <MenuList>
                 <MenuItem>
-                  <Link to="/publish"></Link>
-                  <Flex>
-                    <SiGoogleanalytics></SiGoogleanalytics>
-                    <Flex direction={"column"}>
-                      <Text fontWeight={"extrabold"}>Publishing</Text>
-                      <Text>
-                        Plan, collaborate, and publish thumb-stopping content
-                      </Text>
+                  <Link to="/publish">
+                    <Flex align={"center"} gap="20px">
+                      <GiPaperPlane fontSize={"27px"}></GiPaperPlane>
+
+                      <Flex direction={"column"}>
+                        <Text fontWeight={"extrabold"}>Publishing</Text>
+                        <Text>
+                          Plan, collaborate, and publish thumb-stopping content
+                        </Text>
+                      </Flex>
                     </Flex>
-                  </Flex>
+                  </Link>
                 </MenuItem>
                 <MenuItem>
                   {" "}
-                  <Link to="/publish"></Link>
-                  <Flex>
-                    <GiPaperPlane></GiPaperPlane>
-                    <Flex direction={"column"}>
-                      <Text fontWeight={"extrabold"}>Analytics</Text>
-                      <Text>
-                        Analyze social media performance and create reports
-                      </Text>
+                  <Link to="/analyze">
+                    <Flex align={"center"} gap="20px">
+                      <SiGoogleanalytics fontSize={"27px"}></SiGoogleanalytics>
+                      <Flex direction={"column"}>
+                        <Text fontWeight={"extrabold"}>Analytics</Text>
+                        <Text>
+                          Analyze social media performance and create reports
+                        </Text>
+                      </Flex>
                     </Flex>
-                  </Flex>
+                  </Link>
                 </MenuItem>
                 <MenuItem>
                   {" "}
-                  <Link to="/publish"></Link>
-                  <Flex>
-                    <BiMessageDetail></BiMessageDetail>
-                    <Flex direction={"column"}>
-                      <Text fontWeight={"extrabold"}>Engagement</Text>
-                      <Text>
-                        Quickly navigate your comments and engage with your
-                        audience
-                      </Text>
+                  <Link to="/engagepage">
+                    <Flex align={"center"} gap="20px">
+                      <BiMessageDetail fontSize={"27px"}></BiMessageDetail>
+                      <Flex direction={"column"}>
+                        <Text fontWeight={"extrabold"}>Engagement</Text>
+                        <Text>
+                          Quickly navigate your comments and engage with your
+                          audience
+                        </Text>
+                      </Flex>
                     </Flex>
-                  </Flex>
+                  </Link>
                 </MenuItem>
                 <MenuItem>
                   {" "}
-                  <Link to="/publish"></Link>
-                  <Flex>
-                    <FiPenTool></FiPenTool>
-                    <Flex direction={"column"}>
-                      <Text fontWeight={"extrabold"}>Start Page</Text>
-                      <Text>Build a customized landing page in minutes</Text>
+                  <Link to="/startpage">
+                    <Flex align={"center"} gap="20px">
+                      <FiPenTool fontSize={"27px"}></FiPenTool>
+                      <Flex direction={"column"}>
+                        <Text fontWeight={"extrabold"}>Start Page</Text>
+                        <Text>Build a customized landing page in minutes</Text>
+                      </Flex>
                     </Flex>
-                  </Flex>
+                  </Link>
                 </MenuItem>
               </MenuList>
             </Menu>
@@ -150,28 +155,32 @@ export const Navbar = () => {
             </Button>
           </LinkBox> */}
           <LinkBox>
-            <Button
-              as="a"
-              variant="ghost"
-              colorScheme={"white"}
-              area-label="Tools"
-              my={5}
-              w="100%"
-            >
-              About
-            </Button>
+            <Link to="/AboutUs">
+              <Button
+                as="a"
+                variant="ghost"
+                colorScheme={"white"}
+                area-label="Tools"
+                my={5}
+                w="100%"
+              >
+                About
+              </Button>
+            </Link>
           </LinkBox>
           <LinkBox>
-            <Button
-              as="a"
-              variant="ghost"
-              colorScheme={"white"}
-              area-label="Tools"
-              my={5}
-              w="100%"
-            >
-              Customer
-            </Button>
+            <Link to={"/Customer"}>
+              <Button
+                as="a"
+                variant="ghost"
+                colorScheme={"white"}
+                area-label="Tools"
+                my={5}
+                w="100%"
+              >
+                Customer
+              </Button>
+            </Link>
           </LinkBox>
         </Flex>
 

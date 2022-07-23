@@ -8,7 +8,7 @@ import { Footer } from "./Components/Footer";
 function App() {
   return (
     <div className="App">
-      <Container maxW={["100%", "100%", "100%", "85%"]} >
+      <Container maxW={["100%", "100%", "100%", "100%"]} >
         <Navbar></Navbar>
         <MainRoutes></MainRoutes>
         <Footer></Footer>

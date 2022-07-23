@@ -1,0 +1,166 @@
+.bx{
+    border: none;
+}
+.val{
+    width: 50%;
+    text-align: left;
+    margin: auto;
+    margin-top: 40px;
+}
+.val h2{
+    font-size: 1.875rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+}
+.val p{
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.8;
+    margin-top: 40px;
+    font-family: Roboto, sans-serif;
+}
+.bx{
+    font-family: Poppins, sans-serif;
+        font-size: 1.125rem;
+        line-height: 1;
+        font-weight: 700;
+        margin: 0px;
+        text-align: left;
+        width: 95%;
+    
+}
+li{
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.acc{
+    border: none;
+    margin-top: 3%;
+    margin-bottom: 2%;
+
+}
+.acc:hover{
+    background-color: white;
+}
+
+.trim{
+    width: 100%;
+    margin-bottom: 0%;
+    margin-top: 5%;
+}
+.trim img{
+    width: fit-content;
+    height: fit-content;
+    object-fit: cover;
+
+}
+.trsp{
+    width: 50%;
+    text-align: left;
+    margin: auto;
+    margin-top: 0px;
+    padding-top: 5%;
+    
+}
+.trsp h2 {
+    font-size: 1.875rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+    
+}
+
+.trsp p {
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.8;
+    margin-top: 40px;
+    font-family: Roboto, sans-serif;
+}
+.csOpnL {
+    display: flex;
+    flex-flow: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 2em;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    padding: 5%;
+}
+.iXhtha {
+    margin-bottom: 20px;
+    position: relative;
+    flex: 1 1 0%;
+}
+a {
+    font-size: 1rem;
+    color: rgb(44, 75, 255);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+a {
+    background-color: transparent;
+}
+.lcZnln {
+    width: 60px;
+    height: 60px;
+    margin: 0px auto 20px;
+    margin-left: 0%;
+}
+svg {
+    width: 100%;
+    height: 100%;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 3;
+}
+.hh4 {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 0px 0px 1.25rem;
+    text-align: left;
+}
+.fbILPC {
+    line-height: 1.7;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.klOizA {
+text-align: left;
+}
+.trns{
+    background-color: rgb(245, 245, 245);
+    margin-top: 0%;
+}
+
+.tm{
+    width: 50%;
+    text-align: left;
+    margin: auto;
+     margin-top: 40px;
+}
+.tm h2 {
+    font-size: 1.875rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+}
+
+.tm p {
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.8;
+    margin-top: 40px;
+    font-family: Roboto, sans-serif;
+}
+.b{
+    margin: auto;
+    margin-top: 8%;
+    width: 195px;
+}

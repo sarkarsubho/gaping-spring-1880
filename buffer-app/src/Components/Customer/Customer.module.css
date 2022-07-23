@@ -1,0 +1,134 @@
+.cst{
+    margin-top: 7%;
+}
+.maindiv{
+    text-align: center;
+    max-width: 800px;
+    padding: 60px;
+    margin: 24px auto;
+   border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    background-repeat: no-repeat;
+}
+.lg{
+    width: 300px;
+    height: 40px;
+    margin: auto;
+    max-width: 100%;
+}
+.dicr{
+    margin: 24px auto;
+    text-align: center;
+    color: rgb(61, 61, 61);
+    font-size: 24px;
+    max-width: 650px;
+    font-family: Roboto, sans-serif;
+}
+.anc{
+    color: blue;
+}
+.anc:hover{
+    text-decoration: underline;
+}
+.prsn{
+display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+.avtr{
+    width: 48px;
+    height: 48px;
+}
+.prsn p{
+    margin-left: 1em;
+    color: rgb(155, 155, 155);
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+}
+.muse{
+    background: linear-gradient(white, white) no-repeat padding-box, linear-gradient(to right, rgb(224, 54, 79), rgb(255, 112, 44)) border-box;
+    
+}
+.hunt{
+    background: linear-gradient(white, white) no-repeat padding-box, linear-gradient(to right, rgb(255, 112, 44), rgb(252, 232, 106)) border-box;
+    
+}
+.aron{
+    background: linear-gradient(white, white) no-repeat padding-box, linear-gradient(to right, rgb(120, 86, 255), rgb(101, 185, 255)) border-box;
+}
+.andrw{
+    background: linear-gradient(white, white) no-repeat padding-box, linear-gradient(to right, rgb(44, 75, 255), rgb(186, 107, 255)) border-box;
+}
+.Knell{
+        background: linear-gradient(white, white) no-repeat padding-box, linear-gradient(to right, rgb(224, 54, 79), rgb(255, 112, 44)) border-box;
+}
+.Pidek{
+    background: linear-gradient(white, white) no-repeat padding-box, linear-gradient(to right, rgb(0, 200, 207), rgb(153, 233, 236)) border-box;
+}
+.Barker{
+        background: linear-gradient(white, white) no-repeat padding-box, linear-gradient(to right, rgb(120, 86, 255), rgb(101, 185, 255)) border-box;
+}
+.Jessica{
+    background: linear-gradient(white, white) no-repeat padding-box, linear-gradient(to right, rgb(255, 112, 44), rgb(252, 232, 106)) border-box;
+}
+.Tony{
+        background: linear-gradient(white, white) no-repeat padding-box, linear-gradient(to right, rgb(0, 200, 207), rgb(153, 233, 236)) border-box;
+}
+
+.Pidekimg{
+    width: 110px;
+    height: 80px;
+}
+
+.kHKwVS {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.kHKwVS p {
+    display: inline-block;
+    position: relative;
+    color: rgb(44, 75, 255);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-family: Roboto, sans-serif;
+    margin-top: 3%;
+}
+.eQkTEk {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: calc(1.375rem + (1vw - 3.75px) * 1.6901);
+    line-height: calc(2rem + (1vw - 3.75px) * 2.2535);
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+}
+.BRoUU {
+    margin-bottom: 2.375rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0px 0px 1rem;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.1px;
+    text-align: center;
+    line-height: 1.8;
+    margin-top: 2%;
+    font-family: Roboto, sans-serif;
+}
+@media(max-width:768px){
+    .cst{
+        padding: 0px 35px;
+    }
+    .begKjn{
+            padding: 0px 35px;
+        }
+}

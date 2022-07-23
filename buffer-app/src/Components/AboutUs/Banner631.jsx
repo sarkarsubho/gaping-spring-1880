@@ -1,21 +1,21 @@
 import React from "react";
-import "./Banner631.css";
-import background from "./bkimg.png";
+import styles from "./Banner631.module.css";
+import background from "./bkgimg.jpg";
 
 const Banner631 = () => {
   return (
     <>
-      <div className="pnk">
-        <h1 className="ab">About us</h1>
-        <div className="imdiv">
+      <div className={styles.pnk}>
+        <h1 className={styles.ab}>About us</h1>
+        <div className={styles.imdiv}>
           <img
-            className="im"
+            className={styles.im}
             src="https://static.buffer.com/cdn-cgi/image/w=750,qual…auto/marketing/static/team/buffer-group-photo.jpg"
             alt=""
           />
         </div>
       </div>
-      <div className="blg">
+      <div className={styles.blg}>
         <p>
           We’re a fully distributed team of 85 people living and working in 15
           countries around the world. And we’re working to build the best
@@ -54,41 +54,41 @@ const Banner631 = () => {
           href="//open.buffer.com/"
           target="_blank"
           rel="noopener"
-          className="btn"
+          className={styles.btn}
         >
           Read the Open Blog
         </a>
       </div>
       <div
-        className="outr"
+        className={styles.outr}
         style={{
           background: `url(${background})`,
         }}
       >
-        <div className="innr">
-          <div className="innr1">
+        <div className={styles.innr}>
+          <div className={styles.innr1}>
             <h2>85</h2>
             <p>teamates</p>
           </div>
         </div>
-        <div className="innr">
-          <div className="innr2">
+        <div className={styles.innr}>
+          <div className={styles.innr2}>
             <h2>15</h2>
             <p>countries</p>
           </div>
         </div>
-        <div className="innr">
-          <div className="innr3">
+        <div className={styles.innr}>
+          <div className={styles.innr3}>
             <h2>140,000+</h2>
             <p>users</p>
           </div>
         </div>
       </div>
 
-      <section className="lkHCMN">
-        <div className="hWAzQZ">
-          <h2 className="brnd">A few of the amazing brands who trust Buffer</h2>
-          <div class="cpUkiG">
+      <section className={styles.lkHCMN}>
+        <div className={styles.hWAzQZ}>
+          <h2 className={styles.brnd}>A few of the amazing brands who trust Buffer</h2>
+          <div className={styles.cpUkiG}>
             <div>
               <svg
                 viewBox="0 0 98 16"

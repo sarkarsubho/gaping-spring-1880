@@ -1,8 +1,6 @@
 .outr{
-    /* background-image: url("https: //drive.google.com/uc?export=view&id=1p84zLQAiEzNCjlz4FJNAaAThVZF8cUF0"); */
     width: 100%;
     height: auto;
-    border: red solid 1px;
     display: flex;
     justify-content: space-around;
     margin-top: 80px;
@@ -70,14 +68,6 @@ svg {
     height: 100%;
 }
 
-/* @media (min-width: 64em) .lkHCMN {
-    padding-top: 110px;
-}
-
-@media (min-width: 64em) .lkHCMN {
-    padding-top: 70px;
-    padding-bottom: 70px;
-} */
 
 .lkHCMN {
     padding-bottom: 50px;
@@ -89,32 +79,14 @@ section {
     display: block;
 }
 
-/* @media (min-width: 64em) .jjVCty {
-    max-width: 900px;
-}
 
-@media (min-width: 64em) .hWAzQZ {
-    max-width: 1248px;
-}
-
-@media (min-width: 37.5em) .hWAzQZ {
-    padding: 0px 35px;
-} */
 
 .hWAzQZ {
     margin: 0px auto;
     padding: 0px 20px;
     display: block;
 }
-/* @media (min-width: 64em) .cpUkiG div {
-    width: calc(25% - 60px);
-    padding: 40px 30px;
-}
 
-@media (min-width: 37.5em) .cpUkiG div {
-    width: calc(33% - 50px);
-    padding: 25px;
-} */
 
 .cpUkiG div {
     height: 50px;
@@ -134,7 +106,6 @@ section {
 .pnk {
     margin: auto;
     background-color: rgb(238, 157, 171);
-    border: red solid 1px;
     width: 100%;
     height: auto;
     padding-bottom: 70px;
@@ -223,4 +194,16 @@ img {
 
 .btn:hover {
     background-color: rgb(36, 36, 165);
+}
+
+@media(max-width:768px){
+    .pnk{
+        padding: 0px 35px;
+    }
+    .blg{
+        padding: 0px 35px;
+    }
+    .innr{
+        padding: 0px 35px;
+    }
 }

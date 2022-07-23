@@ -1,6 +1,7 @@
 import { Button, Flex, Text, LinkBox, Box } from "@chakra-ui/react";
 import React from "react";
 import { BsStack } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 import { Dr } from "./Drawer";
 
@@ -92,12 +93,17 @@ export const Navbar = () => {
         </Flex>
 
         <Flex>
-          <Button colorScheme="blue" variant="link" marginRight={"10px"} fontSize={"20px"} display={["none" ,"none","view","view"]}>
+          <Link to="/login">
+            <Button colorScheme="blue" variant="link" marginRight={"10px"} fontSize={"20px"} display={["none" ,"none","view","view"]}>
             Log In
           </Button>
-          <Button colorScheme="blue" variant="solid" h={"50px"} bg="#2C4BFF" marginLeft={"10px"} fontSize={"18px"}>
+          </Link>
+          <Link to="/signup">
+             <Button colorScheme="blue" variant="solid" h={"50px"} bg="#2C4BFF" marginLeft={"10px"} fontSize={"18px"}>
             Get Started now
           </Button>
+          </Link>
+         
           <Dr></Dr>
         </Flex>
       </Flex>

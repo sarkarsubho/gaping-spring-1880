@@ -19,7 +19,7 @@ export const Tablecomponent = ({ data, index }) => {
   console.log(data, index);
   return (
     <div>
-      <Table variant={"unstyled"} margin={"150px 0"}>
+      <Table variant={"unstyled"} margin={"150px 0"} display={["none","none","view","view"]}>
         <Thead>
           <Tr>
             <Th borderBottom={"1px solid"}>
@@ -140,6 +140,42 @@ export const Tablecomponent = ({ data, index }) => {
           })}
         </Tbody>
       </Table>
+
+      {/* small screen table */}
+      <Table size='sm' display={["view","view","none","none"]}>
+    <Thead>
+      <Tr>
+        <Th>To convert</Th>
+        <Th>into</Th>
+        <Th isNumeric>multiply by</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+      <Tr>
+        <Td>inches</Td>
+        <Td>millimetres (mm)</Td>
+        <Td isNumeric>25.4</Td>
+      </Tr>
+      <Tr>
+        <Td>feet</Td>
+        <Td>centimetres (cm)</Td>
+        <Td isNumeric>30.48</Td>
+      </Tr>
+      <Tr>
+        <Td>yards</Td>
+        <Td>metres (m)</Td>
+        <Td isNumeric>0.91444</Td>
+      </Tr>
+    </Tbody>
+    <Tfoot>
+      <Tr>
+        <Th>To convert</Th>
+        <Th>into</Th>
+        <Th isNumeric>multiply by</Th>
+      </Tr>
+    </Tfoot>
+  </Table>
+      
     </div>
   );
 };

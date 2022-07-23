@@ -15,17 +15,21 @@ import {
 } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsStack } from "react-icons/bs";
-import { MdOutlineKeyboardArrowRight,MdOutlineKeyboardArrowDown } from "react-icons/md";
+import {
+  MdOutlineKeyboardArrowRight,
+  MdOutlineKeyboardArrowDown,
+} from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export const Dr = ({ display }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
 
-  const [ToolsView,setToolView]=useState(false);
+  const [ToolsView, setToolView] = useState(false);
 
-  const handleToolShow=()=>{
+  const handleToolShow = () => {
     setToolView(!ToolsView);
-  }
+  };
   return (
     <div>
       <Button
@@ -43,8 +47,6 @@ export const Dr = ({ display }) => {
         size={"full"}
         finalFocusRef={btnRef}
         placement="right"
-        
-        
       >
         <DrawerOverlay />
         <DrawerContent background={"#2C4BFF"} color="white">
@@ -73,63 +75,76 @@ export const Dr = ({ display }) => {
                   fontSize={"27px"}
                   fontWeight={"bold"}
                   onClick={handleToolShow}
-                >Tools
-                 {ToolsView ? <MdOutlineKeyboardArrowDown fontSize={"35px"}></MdOutlineKeyboardArrowDown>:<MdOutlineKeyboardArrowRight fontSize={"35px"}></MdOutlineKeyboardArrowRight>}
-                  
-                </Button>
-                {ToolsView && <Flex direction={"column"}>
-                  <Button
-                  as="a"
-                  variant="ghost"
-                  colorScheme={"white"}
-                  area-label="Tools"
-                  my={3}
-                  w="100%"
-                  fontSize={"20px"}
-                  fontWeight={"bold"}
                 >
-                  publish
+                  Tools
+                  {ToolsView ? (
+                    <MdOutlineKeyboardArrowDown
+                      fontSize={"35px"}
+                    ></MdOutlineKeyboardArrowDown>
+                  ) : (
+                    <MdOutlineKeyboardArrowRight
+                      fontSize={"35px"}
+                    ></MdOutlineKeyboardArrowRight>
+                  )}
                 </Button>
+                {ToolsView && (
+                  <Flex direction={"column"}>
+                    <Button
+                      as="a"
+                      variant="ghost"
+                      colorScheme={"white"}
+                      area-label="Tools"
+                      my={3}
+                      w="100%"
+                      fontSize={"20px"}
+                      fontWeight={"bold"}
+                      onClick={onClose}
+                    >
+                      publish
+                    </Button>
 
-                <Button
-                  as="a"
-                  variant="ghost"
-                  colorScheme={"white"}
-                  area-label="Tools"
-                  my={3}
-                  w="100%"
-                  fontSize={"20px"}
-                  fontWeight={"bold"}
-                >
-                  AnaLize
-                </Button>
-                <Button
-                  as="a"
-                  variant="ghost"
-                  colorScheme={"white"}
-                  area-label="Tools"
-                  my={3}
-                  w="100%"
-                  fontSize={"20px"}
-                  fontWeight={"bold"}
-                >
-                  Engage
-                </Button>
-                <Button
-                  as="a"
-                  variant="ghost"
-                  colorScheme={"white"}
-                  area-label="Tools"
-                  my={3}
-                  w="100%"
-                  fontSize={"20px"}
-                  fontWeight={"bold"}
-                >
-                  Start Page
-                </Button>
-                <Divider />
-                  
-                  </Flex>}
+                    <Button
+                      as="a"
+                      variant="ghost"
+                      colorScheme={"white"}
+                      area-label="Tools"
+                      my={3}
+                      w="100%"
+                      fontSize={"20px"}
+                      fontWeight={"bold"}
+                      onClick={onClose}
+                    >
+                      AnaLize
+                    </Button>
+                    <Button
+                      as="a"
+                      variant="ghost"
+                      colorScheme={"white"}
+                      area-label="Tools"
+                      my={3}
+                      w="100%"
+                      fontSize={"20px"}
+                      fontWeight={"bold"}
+                      onClick={onClose}
+                    >
+                      Engage
+                    </Button>
+                    <Button
+                      as="a"
+                      variant="ghost"
+                      colorScheme={"white"}
+                      area-label="Tools"
+                      my={3}
+                      w="100%"
+                      fontSize={"20px"}
+                      fontWeight={"bold"}
+                      onClick={onClose}
+                    >
+                      Start Page
+                    </Button>
+                    <Divider />
+                  </Flex>
+                )}
               </LinkBox>
               <LinkBox>
                 <Button
@@ -141,6 +156,7 @@ export const Dr = ({ display }) => {
                   w="100%"
                   fontSize={"27px"}
                   fontWeight={"bold"}
+                  onClick={onClose}
                 >
                   Pricing
                 </Button>
@@ -155,6 +171,7 @@ export const Dr = ({ display }) => {
                   w="100%"
                   fontSize={"27px"}
                   fontWeight={"bold"}
+                  onClick={onClose}
                 >
                   Blog
                 </Button>
@@ -169,6 +186,7 @@ export const Dr = ({ display }) => {
                   w="100%"
                   fontSize={"27px"}
                   fontWeight={"bold"}
+                  onClick={onClose}
                 >
                   About
                 </Button>
@@ -183,37 +201,44 @@ export const Dr = ({ display }) => {
                   w="100%"
                   fontSize={"27px"}
                   fontWeight={"bold"}
+                  onClick={onClose}
                 >
                   Customer
                 </Button>
               </LinkBox>
               <LinkBox>
-                <Button
-                  as="a"
-                  variant="solid"
-                  colorScheme={"orange"}
-                  bg="#E97284"
-                  area-label="Tools"
-                  my={5}
-                  w="100%"
-                  fontSize={"20px"}
-                >
-                  Get started now
-                </Button>
+                <Link to="/signup">
+                  <Button
+                    as="a"
+                    variant="solid"
+                    colorScheme={"orange"}
+                    bg="#E97284"
+                    area-label="Tools"
+                    my={5}
+                    w="100%"
+                    fontSize={"20px"}
+                    onClick={onClose}
+                  >
+                    Get started now
+                  </Button>
+                </Link>
               </LinkBox>
               <LinkBox>
-                <Button
-                  as="a"
-                  variant="ghost"
-                  colorScheme={"white"}
-                  area-label="Tools"
-                  my={5}
-                  w="100%"
-                  fontSize={"27px"}
-                  fontWeight={"bold"}
-                >
-                  Log in
-                </Button>
+                <Link to="/login">
+                  <Button
+                    as="a"
+                    variant="ghost"
+                    colorScheme={"white"}
+                    area-label="Tools"
+                    my={5}
+                    w="100%"
+                    fontSize={"27px"}
+                    fontWeight={"bold"}
+                    onClick={onClose}
+                  >
+                    Log in
+                  </Button>
+                </Link>
               </LinkBox>
             </Flex>
           </DrawerBody>

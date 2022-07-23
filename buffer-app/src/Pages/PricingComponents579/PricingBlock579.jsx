@@ -8,9 +8,9 @@ const PricingBlock579 = () => {
   console.log(data);
   return (
     <div>
-      <Flex justifyContent={"center"} mt={"2rem"}className={styles.shado} gap="23px" maxW={"fit-content"} align="center" margin={"30px auto"} display={["view","view","none","none"]}>
+      <Flex justifyContent={"center"} mt={"2rem"}className={styles.shado} gap="23px" maxW={"100%"} align="center" margin={"30px auto"} display={["view","view","none","none"]}>
         <Box display={"flex"} flexDirection={"column"} padding={"30px"} borderRight={"1px solid gray"}>
-          <Heading as="h2" size="md">
+          <Heading as="h2" size="md" margin={"-1"}>
             Free
           </Heading>
           <Text>

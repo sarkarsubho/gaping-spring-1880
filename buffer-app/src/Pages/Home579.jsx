@@ -18,21 +18,7 @@ import BlueBox659 from "../Components/BlueBox659";
 export const Home579 = () => {
   return (
     <div>
-      {/* <Box>
-          <Text
-            fontWeight={"extrabold"}
-            fontSize={"[40,20,30]"}
-            fontFamily="Roboto,sans-serif"
-            w={"45%"}
-          >
-            140,000+ people like you use Buffer to build their brand on social
-            media every month{" "}
-          </Text>
-       <Text>build their brand on social media</Text>
-        <Text>every month</Text> 
-        </Box>
-        <Button colorScheme="pink">Get started now</Button> */}
-
+      
       <HomeIntro579></HomeIntro579>
       <Flex direction={["column", "column", "column", "row"]}>
         <Image src={brand1} alt="Dan Abramov"></Image>

@@ -105,7 +105,9 @@ export const Navbar = () => {
           {isAuth ? (
             <Flex align={"center"}>
               "subhankar"
-              <Button fontSize={"30px"} colorScheme={"white"} color={"red"}><BiLogOut></BiLogOut></Button>
+              <Button fontSize={"30px"} colorScheme={"white"} color={"red"}>
+                <BiLogOut></BiLogOut>
+              </Button>
             </Flex>
           ) : (
             <Flex align={"center"}>
@@ -129,6 +131,7 @@ export const Navbar = () => {
                   bg="#2C4BFF"
                   marginLeft={"10px"}
                   fontSize={"18px"}
+                  display={["none", "none", "view", "view"]}
                 >
                   Get Started now
                 </Button>

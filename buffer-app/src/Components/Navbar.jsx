@@ -14,19 +14,26 @@ import { BsStack } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 import { Dr } from "./Drawer";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { BiLogOut } from "react-icons/bi";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { GiPaperPlane } from "react-icons/gi";
 import { SiGoogleanalytics } from "react-icons/si";
 import { BiMessageDetail } from "react-icons/bi";
 import { FiPenTool } from "react-icons/fi";
+import { logout } from "../Redux/AuthReducer/action";
+import { CgProfile } from "react-icons/cg";
 
 export const Navbar = () => {
   const isAuth = useSelector((state) => state.AuthReduser.isAuth);
-  console.log(isAuth);
-  // const isAuth=true;
+  const userdata=JSON.parse(localStorage.getItem("UserData"));
+  const dispatch=useDispatch();
 
+  const handleLogout=()=>{
+    dispatch(logout())
+  }
+  // const isAuth=true;
+ console.log("userdata",userdata)
   return (
     <div>
       <Flex justifyContent={"space-between"} margin="10px" align={"center"}>
@@ -187,8 +194,13 @@ export const Navbar = () => {
         <Flex>
           {isAuth ? (
             <Flex align={"center"}>
-              "subhankar"
-              <Button fontSize={"30px"} colorScheme={"white"} color={"red"}>
+              <Flex align={"center"} gap={"15px"}>
+                <CgProfile fontSize={"25px"}></CgProfile>
+                <Text fontWeight={"bold"}> {userdata.name} </Text>
+              </Flex>
+
+             
+              <Button fontSize={"30px"} colorScheme={"white"} color={"red"} onClick={handleLogout}>
                 <BiLogOut></BiLogOut>
               </Button>
             </Flex>

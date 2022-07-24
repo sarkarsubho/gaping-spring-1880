@@ -23,4 +23,8 @@ const login=(params)=> (dispatch)=>{
 })
 }
 
-export {register,login}
+const logout=()=>(dispatch)=>{
+ dispatch({type:types.LOGOUT})
+}
+
+export {register,login,logout}

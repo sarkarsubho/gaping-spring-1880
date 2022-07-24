@@ -13,7 +13,7 @@ const AnalyzeQuote = () => {
                 {`"`} <br /> Analyze helps us work smarter, <br /> not harder. We get insight into <br /> what is working on social.
             </Heading>
             <Image src={image2}/>
-            <p><b>BEN TERRY</b>, Director of Marketing</p>
+            <p align="left"><b>BEN TERRY</b>, Director of Marketing</p>
         </Box>
     </Flex>
   )

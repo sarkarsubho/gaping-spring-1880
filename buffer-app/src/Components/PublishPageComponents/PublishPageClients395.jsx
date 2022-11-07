@@ -6,13 +6,13 @@ import calendar from "../data/Calendar.jpg"
 const PublishPageClients395 = () => {
   return (
     <Flex flexDirection={'column'} alignItems={"center"} textAlign="center">
-        <Box h={"200px"} margin={'auto'} marginTop={"50px"} justifyContent={'center'}>
+        <Box h={"20%"} margin={'auto'} marginTop={"50px"} justifyContent={'center'}>
             <Center>
                 <img src={client} filter="grayscale" alt='shopify'/>
             </Center>
         </Box>
-        <Box w={"600px"} padding={"10px"}> 
-          <Heading as='h1' noOfLines={2} fontWeight="700" fontSize={"32px"}>
+        <Box w={"80%"} padding={"10px"}> 
+          <Heading as='h1' noOfLines={2} fontWeight="700" fontSize={["32px"]}>
             Craft the perfect post for each social network,
              all in one place
           </Heading>

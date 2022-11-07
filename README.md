@@ -1,6 +1,9 @@
 # gaping-spring-1880
 # <span style="color:red"> Cloning of [Buffer] WEBSITE</span>
 
+# Tech Stack
+
+React(18.2) | Redux | React-redux | Chakra-ui
 
 
 ### Snapshots of our project :- 

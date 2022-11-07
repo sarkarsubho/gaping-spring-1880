@@ -1,3 +1,4 @@
+import axios from 'axios';
 import {
     Flex,
     Box,
@@ -34,8 +35,19 @@ import { login } from '../Redux/AuthReducer/action';
         username,password
       }
       dispatch(login(params)).then(res=>{
-        if(res===LOGIN_SUCCESS){
+        if(res.data===LOGIN_SUCCESS){
+          
+         
+          let token=res.payload;
+           
+            axios.get(`https://masai-api-mocker.herokuapp.com/user/${username}`,{
+              headers:{
+                Authorization:`Bearer ${token}`
+              }
+            }).then((r)=>localStorage.setItem("UserData",JSON.stringify(r.data))).catch((e)=>e)
+              
             navigate("/",{replace:true})
+            
         }
         else{
           <h1>Page not found</h1>

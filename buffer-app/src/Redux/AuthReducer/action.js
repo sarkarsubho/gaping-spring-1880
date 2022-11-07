@@ -17,10 +17,14 @@ const login=(params)=> (dispatch)=>{
     dispatch({type:types.LOGIN_REQUEST})
     return axios.post("https://masai-api-mocker.herokuapp.com/auth/login",params).then((r)=> {
         dispatch({type:types.LOGIN_SUCCESS, payload: r.data.token})
-        return types.LOGIN_SUCCESS
+        return {data:types.LOGIN_SUCCESS,payload:r.data.token}
     }).catch((e)=> {dispatch({type:types.LOGIN_FAILURE, payload: e})
         return types.LOGIN_FAILURE
 })
 }
 
-export {register,login}
+const logout=()=>(dispatch)=>{
+ dispatch({type:types.LOGOUT})
+}
+
+export {register,login,logout}

@@ -26,9 +26,9 @@ import { CgProfile } from "react-icons/cg";
 
 export const Navbar = () => {
   const isAuth = useSelector((state) => state.AuthReduser.isAuth);
-  const userdata=JSON.parse(localStorage.getItem("UserData"));
+  const userdata=useSelector((state)=>state.AuthReduser.userdata);
   const dispatch=useDispatch();
-
+  
   const handleLogout=()=>{
     dispatch(logout())
   }

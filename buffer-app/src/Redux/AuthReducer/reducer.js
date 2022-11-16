@@ -1,10 +1,13 @@
 import * as types from "./actionTypes";
 
+const userdata=JSON.parse(localStorage.getItem("UserData"))||{};
+// console.log(userdata)
 const initialState = {
-  isAuth: false,
-  token: "",
+  isAuth: !!userdata?.token || false,
+  token: userdata.token || "",
   isLoading: false,
   isError: false,
+  userdata: JSON.parse(localStorage.getItem("UserData")) || {}
 };
 
 const reducer = (state = initialState, action) => {
@@ -21,6 +24,9 @@ const reducer = (state = initialState, action) => {
       return { ...state, isLoading: true };
     case types.LOGIN_SUCCESS:
       return { ...state, isLoading: false, isAuth: true, token: payload };
+
+    case types.SETUSER:
+      return{...state,userdata:payload}
     case types.LOGIN_FAILURE:
       return {
         ...state,
@@ -30,7 +36,7 @@ const reducer = (state = initialState, action) => {
         token: "",
       };
       case types.LOGOUT:
-        return { ...state, isLoading: false, isAuth: false, token: "" };
+        return { ...state, isLoading: false, isAuth: false, token: "",userdata:{} };
     default:
       return state;
   }

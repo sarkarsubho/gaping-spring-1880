@@ -13,6 +13,7 @@ const register=(payload)=> (dispatch)=>{
 
 }
 
+
 const login=(params)=> (dispatch)=>{
     dispatch({type:types.LOGIN_REQUEST})
     return axios.post("https://masai-api-mocker.herokuapp.com/auth/login",params).then((r)=> {
@@ -24,6 +25,7 @@ const login=(params)=> (dispatch)=>{
 }
 
 const logout=()=>(dispatch)=>{
+localStorage.removeItem("UserData")
  dispatch({type:types.LOGOUT})
 }
 

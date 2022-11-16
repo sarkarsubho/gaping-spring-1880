@@ -76,6 +76,7 @@ import { useDispatch } from 'react-redux';
   }
   
   export default function Signup() {
+
     const [showPassword, setShowPassword] = useState(false);
     const [state,setter] = useReducer(reducer,initialState)
     const navigate = useNavigate();
@@ -83,7 +84,9 @@ import { useDispatch } from 'react-redux';
 
 
     const SignupHandler = ()=>{
+      console.log(state)
       dispattch(register(state)).then((r)=>{
+        console.log(r)
         if(r===REGISTER_SUCCESS){
           navigate("/login",{replace:true})
         }

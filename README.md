@@ -19,7 +19,7 @@ React(18.2) | Redux | React-redux | Chakra-ui
 <img width="400" alt="" src="https://miro.medium.com/max/1400/1*DhhH9H4G2_XqpTyRiM9a0Q.png">
 
 
-- ## <span style="color:blue">Analize Page</span>
+- ## <span style="color:blue">Publish Page</span>
  <img width="391" alt="zms footer" src="https://miro.medium.com/max/1400/1*QI332NLAyazbdsLkDel5xA.png">
  
   ## <span style="color:blue">Login</span>

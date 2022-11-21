@@ -12,13 +12,12 @@ const PublishPageClients395 = () => {
             </Center>
         </Box>
         <Box w={"80%"} padding={"10px"}> 
-          <Heading as='h1' noOfLines={2} fontWeight="700" fontSize={["32px"]}>
-            Craft the perfect post for each social network,
-             all in one place
+          <Heading as='h1' noOfLines={[5,4,3]} fontWeight="700" fontSize={["18px","20px","28px"]}>
+            Craft the perfect post for each social network, all in one place
           </Heading>
         </Box>
-        <Box w={"800px"} padding={"10px"} margin={"5px"}>
-          <Text fontSize={"28px"} noOfLines={2}>
+        <Box w={"80%"} padding={"10px"} margin={"5px"}>
+          <Text fontSize={["18px","20px","28px"]} noOfLines={[5,4,3]}>
             Plan and publish your content for Instagram, Facebook, Twitter, Pinterest, and LinkedIn, all from one simple dashboard.
           </Text>
         </Box>

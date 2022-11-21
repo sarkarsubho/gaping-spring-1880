@@ -7,7 +7,7 @@ import cartlogo from "../data/cartlogo.PNG";
 
 const PublishIconsSection395 = () => {
   return (
-    <Grid templateColumns='repeat(4, 1fr)' margin={'40px'} gap={"10px"}>
+    <Grid templateColumns={['repeat(2, 1fr)','repeat(2, 1fr)','repeat(4, 1fr)']} margin={'40px'} gap={"10px"}>
       <GridItem>
         <img src={delivery} alt="delivery" />
        <h3> <b> Direct scheduling </b></h3>

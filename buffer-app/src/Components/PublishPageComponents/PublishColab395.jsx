@@ -8,7 +8,7 @@ import synclogo from "../data/sync.PNG"
 
 const PublishColab395 = () => {
   return (
-    <Flex  margin={"auto"} justifyContent={"center"} alignItems={"center"} gap={"15"}>
+    <Flex flexDirection={["column",'column','row']} margin={"auto"} justifyContent={"center"} alignItems={"center"} gap={"15"}>
         <Box>
             <Image src={colab}/>
         </Box>

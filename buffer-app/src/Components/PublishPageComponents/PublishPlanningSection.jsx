@@ -4,7 +4,7 @@ import planning from "../data/buffer-publish-planning@2x.jpg"
 const PublishPlanningSection = () => {
   return (
     <Box margin={"40px"} justifyContent={"center"} alignItems={"center"}>
-    <Flex justifyContent={"space-between"}>
+    <Flex justifyContent={"space-between"} flexDirection={["column",'column','row']}>
         <Box>
             <Flex flexDirection={"column"} gap={"40px"}>
                 <Heading fontSize={"18px"} color={"#2c4bfe"} fontWeight={"700px"}>

@@ -3,9 +3,9 @@ import React from 'react'
 import tiktok from '../data/publish-instragram-stories.jpg'
 const PublishTikTokSection395 = () => {
   return (
-    <Flex margin={"auto"} justifyContent={'center'} alignItems={"center"}>
+    <Flex flexDirection={["column","column","row"]} margin={"auto"} justifyContent={'center'} alignItems={"center"}>
         <Box>
-            <Heading as='h2' noOfLines={2}> 
+            <Heading as='h2' noOfLines={[5,4,3]}> 
                 Plan and prepare your TikToks <br /> and Stories
             </Heading>
             <Text fontSize={"24px"}>
